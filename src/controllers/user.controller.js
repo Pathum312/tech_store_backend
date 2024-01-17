@@ -3,12 +3,12 @@ const router = express.Router();
 const UserModel = require('../models/user.model');
 const UserRespository = require('../repositories/user.respository');
 const UserService = require('../services/user.service');
-const prisma = require('../config/database');
-const { JWT } = require('../config');
+// const prisma = require('../config/database');
+const { JWT, Prisma } = require('../config');
 
 const userService = new UserService({
 	userRespository: new UserRespository({
-		userModel: new UserModel({ prisma }),
+		userModel: new UserModel({ Prisma }),
 	}),
 	jwt: JWT,
 });
