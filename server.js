@@ -1,6 +1,7 @@
-const { app, logger } = require('./src/app');
+const app = require('./src/app');
 const http = require('http');
 const { ENV } = require('./src/config');
+const { logger } = require('./src/middleware/log.middleware');
 
 app.set('port', ENV.PORT);
 const server = http.createServer(app);
@@ -17,10 +18,10 @@ function onError(error) {
 	// handle specific listen errors with friendly messages
 	switch (error.code) {
 		case 'EACCES':
-			logger.error(`${ENV.PORT} requires elevated privileges`);
+			logger.error(`Port ${ENV.PORT} requires elevated privileges`);
 			break;
 		case 'EADDRINUSE':
-			logger.error(`${ENV.PORT} is already in use.`);
+			logger.error(`Port ${ENV.PORT} is already in use.`);
 			break;
 		default:
 			logger.error(error);
