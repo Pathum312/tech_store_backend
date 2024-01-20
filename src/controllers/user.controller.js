@@ -25,8 +25,8 @@ router.get('/', async (req, res, next) => {
 router.get('/:id', async (req, res, next) => {
 	try {
 		const id = req.params.id;
-		const users = await userService.getById(id);
-		res.status(200).json(users);
+		const user = await userService.getById(id);
+		res.status(200).json(user);
 	} catch (error) {
 		next(error);
 	}

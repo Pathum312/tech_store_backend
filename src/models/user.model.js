@@ -17,10 +17,31 @@ class UserModel {
 		});
 	}
 
+	async create({ name, username, address, role, email, password }) {
+		return await this.prisma.user.create({
+			data: {
+				name,
+				username,
+				address,
+				role,
+				email,
+				password,
+			},
+		});
+	}
+
 	async getById(id) {
 		return await this.prisma.user.findUnique({
 			where: {
 				id,
+			},
+		});
+	}
+
+	async getByEmail(email) {
+		return await this.prisma.user.findUnique({
+			where: {
+				email,
 			},
 		});
 	}
