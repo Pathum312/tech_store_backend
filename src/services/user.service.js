@@ -5,6 +5,7 @@ class UserService {
 	}
 
 	async get({ username, name, email }) {
+		console.log(username, name, email);
 		return await this.userRespository.get({ username, name, email });
 	}
 

@@ -26,7 +26,7 @@ router.post('/register', async (req, res, next) => {
 			password,
 			next,
 		});
-		logger.info('POST - /auth/register');
+		logger.info(`201 - Added User ${username} - /auth/register - POST`);
 		res.status(201).json(newUser);
 	} catch (error) {
 		next(error);
@@ -37,7 +37,7 @@ router.post('/login', async (req, res, next) => {
 	try {
 		const { email, password } = req.body;
 		const { user, token } = await authService.login({ email, password, next });
-		logger.info('POST - /auth/login');
+		logger.info(`200 - User ${user.username} Logged In - /auth/login - POST`);
 		res.status(200).json({ user, token });
 	} catch (error) {
 		next(error);

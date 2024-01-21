@@ -4,6 +4,7 @@ class UserRespository {
 	}
 
 	async get({ username, name, email }) {
+		console.log(username, name, email);
 		return await this.userModel.get({ username, name, email });
 	}
 

@@ -7,11 +7,12 @@ class UserModel {
 		// Query filters
 		where = {};
 		// Find user by username
-		if (username) where[username] = username;
+		if (username) where['username'] = username;
 		// Find users by name
-		if (name) where[name] = name;
+		if (name) where['name'] = name;
 		// Find user by email
-		if (email) where[email] = email;
+		if (email) where['email'] = email;
+		console.log(where);
 		return await this.prisma.user.findMany({
 			where: where,
 		});
