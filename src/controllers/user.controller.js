@@ -4,10 +4,11 @@ const { UserModel } = require('../models');
 const { UserRespository } = require('../repositories');
 const { UserService } = require('../services');
 const { JWT, Prisma } = require('../config');
+const { logger } = require('../middleware/log.middleware');
 
 const userService = new UserService({
 	userRespository: new UserRespository({
-		userModel: new UserModel({ Prisma }),
+		userModel: new UserModel({ prisma: Prisma }),
 	}),
 	jwt: JWT,
 });
@@ -16,6 +17,7 @@ router.get('/', async (req, res, next) => {
 	try {
 		const { username, name, email } = req.query;
 		const users = await userService.get({ username, name, email });
+		logger.info('GET - /users');
 		res.status(200).json(users);
 	} catch (error) {
 		next(error);
