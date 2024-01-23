@@ -448,3 +448,29 @@ Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `usern
 [info] - 23-01-24 03:16:29 - 200 - Got User Manny Info - /users/65af8220e31988aacf3ceea9 - GET
 [info] - 23-01-24 03:16:39 - 200 - Got User List - /users - GET - {"username":"Pinkz"}}
 [info] - 23-01-24 03:16:44 - 200 - Got User List - /users - GET - {}}
+[info] - 23-01-24 03:26:21 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:26:34 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:34:46 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:35:47 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:41:56 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:42:42 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:42:48 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:42:59 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:43:02 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:43:28 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:44:28 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:44:38 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:48:21 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:48:33 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:49:47 - Server is running on http://localhost:8000
+[info] - 23-01-24 03:50:02 - Server is running on http://localhost:8000
+[info] - 23-01-24 06:39:04 - Server is running on http://localhost:8000
+[error] - 23-01-24 06:39:13 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 23-01-24 06:39:25 - 200 - User Manny Logged In - /auth/login - POST - {"email":"admin@admin.com","password":"test123"}
+[info] - 23-01-24 06:39:40 - 200 - Got User List - /users - GET - {}}
+[info] - 23-01-24 06:39:48 - 200 - Got User Manny Info - /users/65af8220e31988aacf3ceea9 - GET
+[info] - 23-01-24 06:39:57 - 200 - Got User List - /users - GET - {}}
+[info] - 23-01-24 06:55:05 - Server is running on http://localhost:8000
+[info] - 23-01-24 06:55:32 - Server is running on http://localhost:8000
+[info] - 23-01-24 08:10:21 - Server is running on http://localhost:8000
+[info] - 23-01-24 08:10:46 - Server is running on http://localhost:8000
