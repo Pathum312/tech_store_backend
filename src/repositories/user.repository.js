@@ -1,10 +1,9 @@
-class UserRespository {
+class UserRepository {
 	constructor({ userModel }) {
 		this.userModel = userModel;
 	}
 
 	async get({ username, name, email }) {
-		console.log(username, name, email);
 		return await this.userModel.get({ username, name, email });
 	}
 
@@ -28,4 +27,4 @@ class UserRespository {
 	}
 }
 
-module.exports = UserRespository;
+module.exports = UserRepository;
