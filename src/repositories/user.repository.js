@@ -1,4 +1,4 @@
-class UserRespository {
+class UserRepository {
 	constructor({ userModel }) {
 		this.userModel = userModel;
 	}
@@ -27,4 +27,4 @@ class UserRespository {
 	}
 }
 
-module.exports = UserRespository;
+module.exports = UserRepository;

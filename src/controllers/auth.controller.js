@@ -1,13 +1,11 @@
 const express = require('express');
 const router = express.Router();
 const { UserModel } = require('../models');
-const { UserRespository } = require('../repositories');
+const { UserRepository } = require('../repositories');
 const { AuthService } = require('../services');
 const { Bcrypt, JWT, Prisma } = require('../config');
-const { logger } = require('../middleware/log.middleware');
-
 const authService = new AuthService({
-	userRepository: new UserRespository({
+	userRepository: new UserRepository({
 		userModel: new UserModel({ prisma: Prisma }),
 	}),
 	bcrypt: Bcrypt,
@@ -15,33 +13,11 @@ const authService = new AuthService({
 });
 
 router.post('/register', async (req, res, next) => {
-	try {
-		const { name, username, address, role, email, password } = req.body;
-		const newUser = await authService.register({
-			name,
-			username,
-			address,
-			role,
-			email,
-			password,
-			next,
-		});
-		logger.info('POST - /auth/register');
-		res.status(201).json(newUser);
-	} catch (error) {
-		next(error);
-	}
+	await authService.register(req, res, next);
 });
 
 router.post('/login', async (req, res, next) => {
-	try {
-		const { email, password } = req.body;
-		const { user, token } = await authService.login({ email, password, next });
-		logger.info('POST - /auth/login');
-		res.status(200).json({ user, token });
-	} catch (error) {
-		next(error);
-	}
+	await authService.login(req, res, next);
 });
 
 module.exports = router;
