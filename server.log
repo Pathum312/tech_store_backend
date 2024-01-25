@@ -474,3 +474,4 @@ Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `usern
 [info] - 23-01-24 06:55:32 - Server is running on http://localhost:8000
 [info] - 23-01-24 08:10:21 - Server is running on http://localhost:8000
 [info] - 23-01-24 08:10:46 - Server is running on http://localhost:8000
+[info] - 25-01-24 07:34:46 - Server is running on http://localhost:8000
