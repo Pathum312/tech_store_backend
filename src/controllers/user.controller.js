@@ -18,4 +18,8 @@ router.get('/:id', async (req, res, next) => {
 	await userService.getById(req, res, next);
 });
 
+router.put('/', async (req, res, next) => {
+	await userService.update(req, res, next);
+});
+
 module.exports = router;

@@ -18,12 +18,31 @@ class UserRepository {
 		});
 	}
 
+	async update({ id, name, username, address, email, password }) {
+		return await this.userModel.update({
+			id,
+			name,
+			username,
+			address,
+			email,
+			password,
+		});
+	}
+
+	async destroy({ id }) {
+		return await this.userModel.destroy({ id });
+	}
+
 	async getById(id) {
 		return await this.userModel.getById(id);
 	}
 
 	async getByEmail(email) {
 		return await this.userModel.getByEmail(email);
+	}
+
+	async getByUsername(username) {
+		return await this.userModel.getByUsername(username);
 	}
 }
 
