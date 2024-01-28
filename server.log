@@ -509,3 +509,69 @@ Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `usern
 [info] - 26-01-24 08:23:08 - Server is running on http://localhost:8000
 [info] - 26-01-24 08:23:16 - 200 - Updated User Rehan - /users - PUT
 [info] - 26-01-24 08:23:44 - 200 - Updated User Rehan312 - /users - PUT
+[info] - 28-01-24 04:03:53 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:29:11 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 28-01-24 07:29:23 - 200 - User Rehan312 Logged In - /auth/login - POST - {"email":"rehanfonseka@gmail.com","password":"test123"}
+[info] - 28-01-24 07:29:50 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:30:05 - 200 - Got User Pinkz Info - /users/65ac72567fdf1e47f031f338 - GET
+[error] - 28-01-24 07:30:59 - 400 - Rehan312 is not available. - /users - PUT - ::ffff:127.0.0.1
+[info] - 28-01-24 07:31:09 - 200 - Updated User Rehan - /users - PUT
+[info] - 28-01-24 07:31:59 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:32:03 - 500 - this.prisma.delete is not a function - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:34:56 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:35:02 - 500 - 
+Invalid `this.prisma.user.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:75:39
+
+  72 }
+  73 
+  74 async destroy({ id }) {
+→ 75 	return await this.prisma.user.delete({
+       where: {
+         id: undefined,
+     ?   username?: String,
+     ?   email?: String,
+     ?   AND?: UserWhereInput | UserWhereInput[],
+     ?   OR?: UserWhereInput[],
+     ?   NOT?: UserWhereInput | UserWhereInput[],
+     ?   name?: StringFilter | String,
+     ?   address?: AddressNullableCompositeFilter | AddressObjectEqualityInput | Null,
+     ?   role?: EnumRoleFilter | Role,
+     ?   password?: StringFilter | String,
+     ?   cards?: CardCompositeListFilter | CardObjectEqualityInput[],
+     ?   cart?: CartListRelationFilter,
+     ?   orders?: OrderListRelationFilter,
+     ?   reviews?: ReviewListRelationFilter
+       }
+     })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `username` or `email` arguments. Available options are marked with ?. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:35:49 - Server is running on http://localhost:8000
+[info] - 28-01-24 07:36:02 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:36:13 - 500 - 
+Invalid `this.prisma.user.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:75:39
+
+  72 }
+  73 
+  74 async destroy(id) {
+→ 75 	return await this.prisma.user.delete({
+       where: {
+         id: {
+           id: "65b3d7971ff2b5c1cf48ecdb"
+         }
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `id`: Invalid value provided. Expected String, provided Object. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:36:42 - Server is running on http://localhost:8000
+[info] - 28-01-24 07:36:51 - 200 - Deleted User Rehan - /users - DELETE
+[error] - 28-01-24 07:36:51 - 500 - updatedUser is not defined - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:37:11 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:37:17 - 400 - User doesn't exist. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:37:27 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:37:36 - 201 - Added User Rehan - /auth/register - POST - {"name":"Rehan Fonseka","username":"Rehan","role":"CLIENT","email":"rehanfonseka@gmail.com","password":"test123","address":{"street":"15B, Kaviraja Mawatha, Wakada","city":"Panadura","state":"Kaluthara","zip":"12500","country":"Sri Lanka"}}
+[info] - 28-01-24 07:37:42 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:39:19 - 200 - Deleted User Rehan - /users - DELETE
+[info] - 28-01-24 07:39:28 - 200 - Got User List - /users - GET - {}}

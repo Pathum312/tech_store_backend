@@ -71,8 +71,8 @@ class UserModel {
 		});
 	}
 
-	async destroy({ id }) {
-		return await this.prisma.delete({ where: { id } });
+	async destroy(id) {
+		return await this.prisma.user.delete({ where: { id } });
 	}
 }
 

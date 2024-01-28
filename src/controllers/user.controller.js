@@ -22,4 +22,8 @@ router.put('/', async (req, res, next) => {
 	await userService.update(req, res, next);
 });
 
+router.delete('/:id', async (req, res, next) => {
+	await userService.destroy(req, res, next);
+});
+
 module.exports = router;

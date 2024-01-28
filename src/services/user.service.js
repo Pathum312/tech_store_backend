@@ -54,6 +54,25 @@ class UserService {
 			next(error);
 		}
 	}
+
+	async destroy(req, res, next) {
+		try {
+			const id = req.params.id;
+			// Check if the user exists before update
+			const user = await this.userRepository.getById(id);
+			if (!user)
+				return next({
+					status: 400,
+					message: `User doesn't exist.`,
+				});
+			// If user exists, delete user
+			const deletedUser = await this.userRepository.destroy(id);
+			logger.info(`200 - Deleted User ${deletedUser.username} - /users - DELETE`);
+			return res.status(200).json({ message: `User ${deletedUser.username} deleted` });
+		} catch (error) {
+			next(error);
+		}
+	}
 }
 
 module.exports = UserService;

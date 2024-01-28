@@ -29,8 +29,8 @@ class UserRepository {
 		});
 	}
 
-	async destroy({ id }) {
-		return await this.userModel.destroy({ id });
+	async destroy(id) {
+		return await this.userModel.destroy(id);
 	}
 
 	async getById(id) {
