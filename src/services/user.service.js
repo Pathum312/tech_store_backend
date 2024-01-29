@@ -58,7 +58,7 @@ class UserService {
 	async destroy(req, res, next) {
 		try {
 			const id = req.params.id;
-			// Check if the user exists before update
+			// Check if the user exists before deletion
 			const user = await this.userRepository.getById(id);
 			if (!user)
 				return next({
