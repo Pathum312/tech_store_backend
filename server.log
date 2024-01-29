@@ -509,3 +509,114 @@ Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `usern
 [info] - 26-01-24 08:23:08 - Server is running on http://localhost:8000
 [info] - 26-01-24 08:23:16 - 200 - Updated User Rehan - /users - PUT
 [info] - 26-01-24 08:23:44 - 200 - Updated User Rehan312 - /users - PUT
+[info] - 28-01-24 04:03:53 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:29:11 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 28-01-24 07:29:23 - 200 - User Rehan312 Logged In - /auth/login - POST - {"email":"rehanfonseka@gmail.com","password":"test123"}
+[info] - 28-01-24 07:29:50 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:30:05 - 200 - Got User Pinkz Info - /users/65ac72567fdf1e47f031f338 - GET
+[error] - 28-01-24 07:30:59 - 400 - Rehan312 is not available. - /users - PUT - ::ffff:127.0.0.1
+[info] - 28-01-24 07:31:09 - 200 - Updated User Rehan - /users - PUT
+[info] - 28-01-24 07:31:59 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:32:03 - 500 - this.prisma.delete is not a function - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:34:56 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:35:02 - 500 - 
+Invalid `this.prisma.user.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:75:39
+
+  72 }
+  73 
+  74 async destroy({ id }) {
+→ 75 	return await this.prisma.user.delete({
+       where: {
+         id: undefined,
+     ?   username?: String,
+     ?   email?: String,
+     ?   AND?: UserWhereInput | UserWhereInput[],
+     ?   OR?: UserWhereInput[],
+     ?   NOT?: UserWhereInput | UserWhereInput[],
+     ?   name?: StringFilter | String,
+     ?   address?: AddressNullableCompositeFilter | AddressObjectEqualityInput | Null,
+     ?   role?: EnumRoleFilter | Role,
+     ?   password?: StringFilter | String,
+     ?   cards?: CardCompositeListFilter | CardObjectEqualityInput[],
+     ?   cart?: CartListRelationFilter,
+     ?   orders?: OrderListRelationFilter,
+     ?   reviews?: ReviewListRelationFilter
+       }
+     })
+
+Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `username` or `email` arguments. Available options are marked with ?. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:35:49 - Server is running on http://localhost:8000
+[info] - 28-01-24 07:36:02 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:36:13 - 500 - 
+Invalid `this.prisma.user.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:75:39
+
+  72 }
+  73 
+  74 async destroy(id) {
+→ 75 	return await this.prisma.user.delete({
+       where: {
+         id: {
+           id: "65b3d7971ff2b5c1cf48ecdb"
+         }
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `id`: Invalid value provided. Expected String, provided Object. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:36:42 - Server is running on http://localhost:8000
+[info] - 28-01-24 07:36:51 - 200 - Deleted User Rehan - /users - DELETE
+[error] - 28-01-24 07:36:51 - 500 - updatedUser is not defined - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:37:11 - Server is running on http://localhost:8000
+[error] - 28-01-24 07:37:17 - 400 - User doesn't exist. - /users/65b3d7971ff2b5c1cf48ecdb - DELETE - ::ffff:127.0.0.1
+[info] - 28-01-24 07:37:27 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:37:36 - 201 - Added User Rehan - /auth/register - POST - {"name":"Rehan Fonseka","username":"Rehan","role":"CLIENT","email":"rehanfonseka@gmail.com","password":"test123","address":{"street":"15B, Kaviraja Mawatha, Wakada","city":"Panadura","state":"Kaluthara","zip":"12500","country":"Sri Lanka"}}
+[info] - 28-01-24 07:37:42 - 200 - Got User List - /users - GET - {}}
+[info] - 28-01-24 07:39:19 - 200 - Deleted User Rehan - /users - DELETE
+[info] - 28-01-24 07:39:28 - 200 - Got User List - /users - GET - {}}
+[info] - 29-01-24 11:32:17 - Server is running on http://localhost:8000
+[info] - 29-01-24 11:34:32 - Server is running on http://localhost:8000
+[info] - 29-01-24 13:07:42 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:04:53 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:38:30 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:39:46 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:40:26 - 201 - Added User Rehan - /auth/register - POST - {"name":"Rehan Fonseka","username":"Rehan","role":"CLIENT","email":"rehanfonseka@gmail.com","password":"test123","address":{"street":"15B, Kaviraja Mawatha, Wakada","city":"Panadura","state":"Kaluthara","zip":"12500","country":"Sri Lanka"}}
+[info] - 29-01-24 21:40:32 - 200 - User Rehan Logged In - /auth/login - POST - {"email":"rehanfonseka@gmail.com","password":"test123"}
+[info] - 29-01-24 21:40:44 - 200 - Got User List - /users - GET - {}}
+[info] - 29-01-24 21:43:05 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:44:20 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:45:10 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:46:53 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:47:38 - Server is running on http://localhost:8000
+[info] - 29-01-24 21:47:44 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:21:47 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:21:57 - 200 - User Rehan Logged In - /auth/login - POST - {"email":"rehanfonseka@gmail.com","password":"test123"}
+[error] - 29-01-24 22:22:28 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[error] - 29-01-24 22:22:31 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[error] - 29-01-24 22:24:17 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:24:32 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:24:32 - 401 - Invalid Token - /users - GET - ::1
+[info] - 29-01-24 22:24:51 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:24:54 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[error] - 29-01-24 22:24:56 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:25:02 - 200 - User Rehan Logged In - /auth/login - POST - {"email":"rehanfonseka@gmail.com","password":"test123"}
+[error] - 29-01-24 22:25:17 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[error] - 29-01-24 22:25:19 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:25:30 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:25:49 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:25:52 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:27:22 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:27:25 - 401 - Invalid Token - /users - GET - ::ffff:127.0.0.1
+[info] - 29-01-24 22:29:07 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:29:26 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:33:50 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:34:19 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:35:26 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:35:41 - 200 - Got User List - /users - GET - {}}
+[error] - 29-01-24 22:36:02 - 401 - Invalid Token - /users/65b7cdf1dacbbb5276afa013 - DELETE - ::ffff:127.0.0.1
+[info] - 29-01-24 22:36:20 - 200 - Deleted User Rehan - /users - DELETE
+[error] - 29-01-24 22:36:23 - 401 - User assigned for the token, does not exist - /users/65b7cdf1dacbbb5276afa013 - DELETE - ::ffff:127.0.0.1
+[info] - 29-01-24 22:37:44 - Server is running on http://localhost:8000
+[info] - 29-01-24 22:38:16 - Server is running on http://localhost:8000
+[error] - 29-01-24 22:43:21 - 401 - User assigned for the token, does not exist - /users/65b7cdf1dacbbb5276afa013 - DELETE - ::ffff:127.0.0.1
