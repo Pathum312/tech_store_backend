@@ -9,7 +9,7 @@ class UserService {
 		try {
 			const { username, name, email } = req.query;
 			const users = await this.userRepository.get({ username, name, email });
-			logger.info(`200 - Got User List - /users - GET - ${JSON.stringify(req.query)}}`);
+			logger.info(`200 - Got User List - /users - GET - ${JSON.stringify(req.query)}`);
 			return res.status(200).json(users);
 		} catch (error) {
 			next(error);
@@ -32,6 +32,7 @@ class UserService {
 			const { id, name, username, address } = req.body;
 			// Check if the user exists before update
 			const user = await this.userRepository.getById(id);
+			// If there's no such user, send error
 			if (!user)
 				return next({
 					status: 400,
@@ -48,7 +49,9 @@ class UserService {
 				username,
 				address,
 			});
-			logger.info(`200 - Updated User ${updatedUser.username} - /users - PUT`);
+			logger.info(
+				`200 - Updated User ${updatedUser.username} - /users - PUT - ${JSON.stringify(req.body)}`,
+			);
 			return res.status(200).json({ message: `User ${updatedUser.username} updated` });
 		} catch (error) {
 			next(error);
@@ -60,6 +63,7 @@ class UserService {
 			const id = req.params.id;
 			// Check if the user exists before deletion
 			const user = await this.userRepository.getById(id);
+			// If there's no such user, send error
 			if (!user)
 				return next({
 					status: 400,
@@ -67,7 +71,7 @@ class UserService {
 				});
 			// If user exists, delete user
 			const deletedUser = await this.userRepository.destroy(id);
-			logger.info(`200 - Deleted User ${deletedUser.username} - /users - DELETE`);
+			logger.info(`200 - Deleted User ${deletedUser.username} - /users/${id} - DELETE`);
 			return res.status(200).json({ message: `User ${deletedUser.username} deleted` });
 		} catch (error) {
 			next(error);
