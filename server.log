@@ -620,3 +620,22 @@ Argument `id`: Invalid value provided. Expected String, provided Object. - /user
 [info] - 29-01-24 22:37:44 - Server is running on http://localhost:8000
 [info] - 29-01-24 22:38:16 - Server is running on http://localhost:8000
 [error] - 29-01-24 22:43:21 - 401 - User assigned for the token, does not exist - /users/65b7cdf1dacbbb5276afa013 - DELETE - ::ffff:127.0.0.1
+[info] - 29-01-24 22:48:57 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:05:09 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:20:09 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:20:29 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:20:59 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:26:51 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:28:22 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:29:50 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:33:36 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:33:43 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:35:17 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:36:40 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:37:29 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:38:14 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:44:15 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:44:24 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:59:14 - Server is running on http://localhost:8000
+[info] - 30-01-24 09:59:31 - Server is running on http://localhost:8000
+[info] - 30-01-24 10:03:42 - Server is running on http://localhost:8000

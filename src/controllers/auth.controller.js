@@ -20,4 +20,8 @@ router.post('/login', async (req, res, next) => {
 	await authService.login(req, res, next);
 });
 
+router.patch('/reset-password', async (req, res, next) => {
+	await authService.resetPassword(req, res, next);
+});
+
 module.exports = router;

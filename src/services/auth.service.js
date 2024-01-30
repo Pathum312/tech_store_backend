@@ -22,9 +22,7 @@ class AuthService {
 			if (role === 'CLIENT') data['address'] = address;
 			const newUser = await this.userRepository.create(data);
 			logger.info(
-				`201 - Added User ${username} - /auth/register - POST - ${JSON.stringify(
-					req.body,
-				)}`,
+				`201 - Added User ${username} - /auth/register - POST - ${JSON.stringify(req.body)}`,
 			);
 			return res.status(201).json(newUser);
 		} catch (error) {
@@ -36,20 +34,33 @@ class AuthService {
 		try {
 			const { email, password } = req.body;
 			const user = await this.userRepository.getByEmail(email);
-			const passwordIsCorrect = await this.bcrypt.compare(
-				password,
-				user.password,
-			);
+			const passwordIsCorrect = await this.bcrypt.compare(password, user.password);
 			if (!user || !passwordIsCorrect)
 				return next({ status: 400, message: 'Invalid email or password.' });
 
 			const token = this.jwt.generateToken({ userId: user.id });
 			logger.info(
-				`200 - User ${
-					user.username
-				} Logged In - /auth/login - POST - ${JSON.stringify(req.body)}`,
+				`200 - User ${user.username} Logged In - /auth/login - POST - ${JSON.stringify(req.body)}`,
 			);
 			return res.status(200).json({ ...user, token });
+		} catch (error) {
+			next(error);
+		}
+	}
+
+	async resetPassword(req, res, next) {
+		try {
+			const { id, password, newPassword } = req.body;
+			const user = await this.userRepository.getById(id);
+			const passwordIsCorrect = await this.bcrypt.compare(password, user.password);
+			if (!user || !passwordIsCorrect)
+				return next({ status: 400, message: 'Invalid user or password' });
+			const hash = await this.bcrypt.hash(newPassword, 10);
+			const updatedUser = await this.userRepository.update({ password: hash });
+			logger.info(
+				`200 - Updated User ${updatedUser.username} Password - /auth/reset-password - PUT`,
+			);
+			return res.status(200).json({ message: `Updated User ${updatedUser.username} Password` });
 		} catch (error) {
 			next(error);
 		}
