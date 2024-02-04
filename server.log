@@ -1030,3 +1030,58 @@ Argument `where` of type UserWhereUniqueInput needs at least one of `id`, `usern
 [info] - 04-02-24 12:34:28 - Server is running on http://localhost:8000
 [info] - 04-02-24 12:35:01 - Server is running on http://localhost:8000
 [info] - 04-02-24 12:35:19 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:33:44 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:35:00 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:36:40 - Server is running on http://localhost:8000
+[error] - 04-02-24 18:42:46 - 500 - this.prisma.create is not a function - /categories - POST - ::ffff:127.0.0.1
+[info] - 04-02-24 18:43:15 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:43:34 - 201 - Added Category PS4 GAMES - /categories - POST - {"name":"PS4 GAMES","description":"Games for the ps4 console."}
+[info] - 04-02-24 18:44:07 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:44:45 - 201 - Added Category Consoles - /categories - POST - {"name":"Consoles","description":"Consoles"}
+[info] - 04-02-24 18:44:53 - 200 - Got Category List - /categories - GET - {}
+[error] - 04-02-24 18:52:27 - 500 - 
+Invalid `this.prisma.category.update()` invocation in
+C:\Projects\tech_store_backend\src\models\category.model.js:30:37
+
+  27 if (name) data['name'] = name;
+  28 // Check if description is not null
+  29 if (description) data['description'] = description;
+→ 30 return await this.prisma.category.update({
+       where: {
+         id: undefined
+       },
+     + data: CategoryUpdateInput | CategoryUncheckedUpdateInput
+     })
+
+Argument `data` is missing. - /categories - PUT - ::ffff:127.0.0.1
+[info] - 04-02-24 18:53:10 - Server is running on http://localhost:8000
+[error] - 04-02-24 18:53:17 - 500 - 
+Invalid `this.prisma.category.update()` invocation in
+C:\Projects\tech_store_backend\src\models\category.model.js:30:37
+
+  27 if (name) data['name'] = name;
+  28 // Check if description is not null
+  29 if (description) data['description'] = description;
+→ 30 return await this.prisma.category.update({
+       where: {
+         id: undefined,
+     ?   AND?: CategoryWhereInput | CategoryWhereInput[],
+     ?   OR?: CategoryWhereInput[],
+     ?   NOT?: CategoryWhereInput | CategoryWhereInput[],
+     ?   name?: StringFilter | String,
+     ?   description?: StringFilter | String,
+     ?   products?: ProductListRelationFilter
+       },
+       data: {
+         name: "PS4 Games"
+       }
+     })
+
+Argument `where` of type CategoryWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /categories - PUT - ::ffff:127.0.0.1
+[info] - 04-02-24 18:54:46 - Server is running on http://localhost:8000
+[info] - 04-02-24 18:54:59 - 200 - Category PS4 Games updated - /categories - PUT - {"id":"65bf8d7ee8211ce360b66abc","name":"PS4 Games"}
+[info] - 04-02-24 18:55:03 - 200 - Got Category List - /categories - GET - {}
+[info] - 04-02-24 19:03:32 - 200 - Category Consoles deleted - /categories/65bf8dc4d2606395d9b46fa8 - DELETE
+[info] - 04-02-24 19:03:35 - 200 - Got Category List - /categories - GET - {}
+[info] - 04-02-24 19:03:39 - 201 - Added Category Consoles - /categories - POST - {"name":"Consoles","description":"Consoles"}
+[info] - 04-02-24 19:03:43 - 200 - Got Category List - /categories - GET - {}

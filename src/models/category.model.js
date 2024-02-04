@@ -17,7 +17,7 @@ class CategoryModel {
 	}
 
 	async create({ name, description }) {
-		return await this.prisma.create({ data: { name, description } });
+		return await this.prisma.category.create({ data: { name, description } });
 	}
 
 	async update({ id, name, description }) {
@@ -27,7 +27,7 @@ class CategoryModel {
 		if (name) data['name'] = name;
 		// Check if description is not null
 		if (description) data['description'] = description;
-		return await this.prisma.category.update({ where: { id } }, data);
+		return await this.prisma.category.update({ where: { id }, data });
 	}
 
 	async destroy(id) {

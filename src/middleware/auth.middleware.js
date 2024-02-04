@@ -15,7 +15,7 @@ const authenticateUser = async (req, res, next) => {
 		//  Finding the user assigned to the token
 		const user = await userRepository.getById(decoded.userId);
 		// Checking if the user exists or whether that user has logged in
-		// If both conditions above are false, send an error
+		// If both conditions below are false, send an error
 		if (!user || !user.login)
 			return next({ status: 401, message: `Invalid token for the user ${user.username}` });
 		next();

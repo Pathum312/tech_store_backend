@@ -14,7 +14,7 @@ app.use('/api-docs', Swagger.swaggerUI.serve, Swagger.swaggerUI.setup(Swagger.sp
 // API Routes
 app.use('/auth', AuthController);
 app.use('/users', authenticateUser, UserController);
-app.use('/categories', authenticateUser, CategoryController);
+app.use('/categories', CategoryController);
 // Custom error logger
 app.use(handleErrors);
 

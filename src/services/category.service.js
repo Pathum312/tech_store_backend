@@ -25,7 +25,7 @@ class CategoryService {
 			this.logger.info(
 				`201 - Added Category ${category.name} - /categories - POST - ${JSON.stringify(req.body)}`,
 			);
-			return res.status(201).json(`Catgeory ${category.name} Added`);
+			return res.status(201).json({ message: `Catgeory ${category.name} Added` });
 		} catch (error) {
 			next(error);
 		}
@@ -39,7 +39,7 @@ class CategoryService {
 			// If no category is found, send an error
 			if (!category) return next({ status: 400, message: `Category ${name} doesn't exist` });
 			// Finally updated the category with the provided data
-			const updatedCategory = await this.categoryRepository.update({ name, description });
+			const updatedCategory = await this.categoryRepository.update({ id, name, description });
 			this.logger.info(
 				`200 - Category ${updatedCategory.name} updated - /categories - PUT - ${JSON.stringify(
 					req.body,
