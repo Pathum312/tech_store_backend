@@ -3,21 +3,18 @@ const cors = require('cors');
 const { Swagger } = require('./config');
 const { handleErrors } = require('./middleware/log.middleware');
 const { authenticateUser } = require('./middleware/auth.middleware');
-const { UserController, AuthController } = require('./controllers');
+const { UserController, AuthController, CategoryController } = require('./controllers');
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 // Swagger Documentation
-app.use(
-	'/api-docs',
-	Swagger.swaggerUI.serve,
-	Swagger.swaggerUI.setup(Swagger.specs),
-);
+app.use('/api-docs', Swagger.swaggerUI.serve, Swagger.swaggerUI.setup(Swagger.specs));
 // API Routes
 app.use('/auth', AuthController);
 app.use('/users', authenticateUser, UserController);
+app.use('/categories', authenticateUser, CategoryController);
 // Custom error logger
 app.use(handleErrors);
 

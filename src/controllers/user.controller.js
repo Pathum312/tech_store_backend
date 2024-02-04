@@ -4,10 +4,12 @@ const { UserModel } = require('../models');
 const { UserRepository } = require('../repositories');
 const { UserService } = require('../services');
 const { Prisma } = require('../config');
+const { logger } = require('../middleware/log.middleware');
 const userService = new UserService({
 	userRepository: new UserRepository({
 		userModel: new UserModel({ prisma: Prisma }),
 	}),
+	logger,
 });
 
 router.get('/', async (req, res, next) => {

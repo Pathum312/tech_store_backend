@@ -67,10 +67,7 @@ class UserModel {
 		if (password) data['password'] = password;
 		// Check if login is not null
 		if (login === true || login === false) data['login'] = login;
-		return await this.prisma.user.update({
-			where: { id },
-			data,
-		});
+		return await this.prisma.user.update({ where: { id }, data });
 	}
 
 	async destroy(id) {
