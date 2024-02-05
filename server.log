@@ -1085,3 +1085,4 @@ Argument `where` of type CategoryWhereUniqueInput needs at least one of `id` arg
 [info] - 04-02-24 19:03:35 - 200 - Got Category List - /categories - GET - {}
 [info] - 04-02-24 19:03:39 - 201 - Added Category Consoles - /categories - POST - {"name":"Consoles","description":"Consoles"}
 [info] - 04-02-24 19:03:43 - 200 - Got Category List - /categories - GET - {}
+[info] - 04-02-24 19:07:06 - Server is running on http://localhost:8000
