@@ -9,16 +9,17 @@ datasource db {
 
 // Client and supplier uses the same model
 model User {
-  id       String   @id @default(auto()) @map("_id") @db.ObjectId
+  id       String    @id @default(auto()) @map("_id") @db.ObjectId
   name     String
-  username String   @unique
+  username String    @unique
   address  Address?
-  role     Role     @default(CLIENT)
-  email    String   @unique
+  role     Role      @default(CLIENT)
+  email    String    @unique
   password String
-  login    Boolean? @default(false)
+  login    Boolean?  @default(false)
   cards    Card[]
   cart     Cart[]
+  products Product[]
   orders   Order[]
   reviews  Review[]
 }
@@ -59,6 +60,8 @@ model Product {
   reviews     Review[]
   category_id String       @db.ObjectId
   category    Category     @relation(fields: [category_id], references: [id])
+  user_id     String       @db.ObjectId
+  user        User         @relation(fields: [user_id], references: [id])
   discount_id String?      @db.ObjectId
   discount    Discount?    @relation(fields: [discount_id], references: [id])
 }
