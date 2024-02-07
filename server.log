@@ -1145,3 +1145,188 @@ Argument `where` of type CategoryWhereUniqueInput needs at least one of `id` arg
 [info] - 06-02-24 11:28:27 - Server is running on http://localhost:8000
 [info] - 06-02-24 11:28:42 - Server is running on http://localhost:8000
 [info] - 06-02-24 11:29:01 - Server is running on http://localhost:8000
+[info] - 06-02-24 14:01:33 - Server is running on http://localhost:8000
+[info] - 06-02-24 14:03:38 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:38:07 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:43:51 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:44:32 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:46:06 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:46:12 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:47:10 - Server is running on http://localhost:8000
+[error] - 06-02-24 15:47:13 - 500 - 
+Invalid `this.prisma.user.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:15:33
+
+  12 if (name) where['name'] = name;
+  13 // Find user by email
+  14 if (email) where['email'] = email;
+→ 15 return await this.prisma.user.findMany(
+Cannot select both '$scalars: true' and a specific scalar field 'carts'. - /users - GET - ::ffff:127.0.0.1
+[error] - 06-02-24 15:47:19 - 500 - 
+Invalid `this.prisma.user.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\user.model.js:15:33
+
+  12 if (name) where['name'] = name;
+  13 // Find user by email
+  14 if (email) where['email'] = email;
+→ 15 return await this.prisma.user.findMany(
+Cannot select both '$scalars: true' and a specific scalar field 'carts'. - /users - GET - ::ffff:127.0.0.1
+[info] - 06-02-24 15:47:25 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:47:28 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:48:19 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:48:23 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:48:27 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:48:31 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:48:50 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:48:51 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:48:58 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:49:00 - 200 - Got User List - /users - GET - {}
+[info] - 06-02-24 15:50:43 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:56:11 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:58:20 - Server is running on http://localhost:8000
+[info] - 06-02-24 15:59:05 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:11:47 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:19:35 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:19:48 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:21:34 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:21:43 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:21:50 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:21:56 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:22:12 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:22:48 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:22:53 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:24:00 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:24:06 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:24:38 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:25:59 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:27:32 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:27:44 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:28:08 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:28:32 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:28:48 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:29:51 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:29:57 - Server is running on http://localhost:8000
+[info] - 06-02-24 16:32:55 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:19:30 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:19:45 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:21:51 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:38:23 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:38:29 - Server is running on http://localhost:8000
+[info] - 06-02-24 18:38:57 - Server is running on http://localhost:8000
+[info] - 07-02-24 11:45:03 - Server is running on http://localhost:8000
+[info] - 07-02-24 11:45:36 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:01:23 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:02:33 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:03:36 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:07:26 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:08:17 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:09:26 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:10:21 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:10:29 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:11:35 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:11:54 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:12:22 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:13:43 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:26:05 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:26:47 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:27:09 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:28:19 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:28:28 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:28:35 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:29:50 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:33:19 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:33:23 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:35:45 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:35:56 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:36:07 - Server is running on http://localhost:8000
+[info] - 07-02-24 12:36:11 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:24:39 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:25:30 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:35:08 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:36:16 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:38:25 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:39:30 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:40:09 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:40:51 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:41:29 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:42:31 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:42:49 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:43:06 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:43:17 - Server is running on http://localhost:8000
+[info] - 07-02-24 13:43:25 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:19:07 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:36:42 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:36:52 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:37:42 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:38:12 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:38:49 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:39:22 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:40:53 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:41:15 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:42:48 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:46:53 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:49:38 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:51:10 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:51:17 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:51:49 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:52:17 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:52:43 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:55:08 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:57:27 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:58:04 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:58:47 - Server is running on http://localhost:8000
+[info] - 07-02-24 14:59:11 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:00:00 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:00:20 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:00:34 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:05:18 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:10:27 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:10:43 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:11:21 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:11:43 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:12:18 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:18:51 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:19:06 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:19:08 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:19:28 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:19:39 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:19:47 - Server is running on http://localhost:8000
+[info] - 07-02-24 15:34:31 - Server is running on http://localhost:8000
+[info] - 07-02-24 16:48:01 - Server is running on http://localhost:8000
+[info] - 07-02-24 17:09:45 - Server is running on http://localhost:8000
+[info] - 07-02-24 17:09:50 - Server is running on http://localhost:8000
+[info] - 07-02-24 17:10:59 - Server is running on http://localhost:8000
+[info] - 07-02-24 17:12:47 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:00:03 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:01:26 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:01:45 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:01:53 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:02:36 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:02:39 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:03:16 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:03:35 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:03:39 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:03:49 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:06:40 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:08:00 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:08:04 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:08:10 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:09:02 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:11:04 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:11:09 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:12:34 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:14:36 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:16:13 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:16:52 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:19:07 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:19:30 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:20:33 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:20:44 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:22:14 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:23:01 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:32:04 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:32:37 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:33:22 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:33:28 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:33:35 - Server is running on http://localhost:8000
+[info] - 07-02-24 18:33:49 - Server is running on http://localhost:8000

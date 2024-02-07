@@ -37,7 +37,7 @@ class CategoryService {
 			// Find category using the proivided id
 			const category = await this.categoryRepository.getById(id);
 			// If no category is found, send an error
-			if (!category) return next({ status: 400, message: `Category ${name} doesn't exist` });
+			if (!category) return next({ status: 500, message: `Category ${name} doesn't exist` });
 			// Finally updated the category with the provided data
 			const updatedCategory = await this.categoryRepository.update({ id, name, description });
 			this.logger.info(
@@ -57,7 +57,7 @@ class CategoryService {
 			// Find category using the proivided id
 			const category = await this.categoryRepository.getById(id);
 			// If no category is found, send an error
-			if (!category) return next({ status: 400, message: `Category ${name} doesn't exist` });
+			if (!category) return next({ status: 500, message: `Category ${name} doesn't exist` });
 			// Finally delete the category
 			const deletedCategory = await this.categoryRepository.destroy(id);
 			this.logger.info(

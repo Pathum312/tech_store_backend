@@ -8,6 +8,7 @@ const {
 	AuthController,
 	CategoryController,
 	ProductController,
+	CartController,
 } = require('./controllers');
 const app = express();
 
@@ -18,9 +19,10 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/api-docs', Swagger.swaggerUI.serve, Swagger.swaggerUI.setup(Swagger.specs));
 // API Routes
 app.use('/auth', AuthController);
-app.use('/users', authenticateUser, UserController);
+app.use('/users', UserController);
 app.use('/categories', CategoryController);
 app.use('/products', ProductController);
+app.use('/carts', CartController);
 // Custom error logger
 app.use(handleErrors);
 
