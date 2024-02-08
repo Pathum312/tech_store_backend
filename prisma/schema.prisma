@@ -68,16 +68,17 @@ model Product {
 
 // The items added to cart will be listed here
 model Cart {
-  id        String      @id @default(auto()) @map("_id") @db.ObjectId
-  products  Cart_Item[]
-  user_id   String      @db.ObjectId
-  user      User        @relation(fields: [user_id], references: [id])
+  id       String      @id @default(auto()) @map("_id") @db.ObjectId
+  products Cart_Item[]
+  user_id  String      @db.ObjectId
+  user     User        @relation(fields: [user_id], references: [id])
 }
 
 // Products added to cart by client
 model Cart_Item {
   id         String  @id @default(auto()) @map("_id") @db.ObjectId
   quantity   Int
+  price      Float
   cart_id    String  @db.ObjectId
   cart       Cart    @relation(fields: [cart_id], references: [id])
   product_id String  @db.ObjectId

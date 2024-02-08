@@ -14,13 +14,14 @@ class CartModel {
 		});
 	};
 
-	create = async ({ user_id, product_id, quantity }) => {
+	create = async ({ user_id, product_id, quantity, price }) => {
 		return await this.prisma.cart.create({
 			data: {
 				user_id,
 				products: {
 					create: {
 						quantity,
+						price,
 						product_id,
 					},
 				},

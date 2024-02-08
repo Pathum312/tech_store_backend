@@ -27,7 +27,7 @@ class CartService {
 
 	addToCart = async (req, res, next) => {
 		try {
-			const { user_id, product_id, quantity } = req.body;
+			const { user_id, product_id, quantity, price } = req.body;
 			// Check if the user already has an active cart
 			const cart = await this.cartRepository.getById(user_id);
 			// If user has an active cart, we will be updating it
@@ -38,6 +38,8 @@ class CartService {
 					// We are assuming that the only updated value is the quantity for the product
 					if (productItem.product_id === product_id) {
 						productItem['quantity'] = quantity;
+						// Price is the price per unit, that is why we multiply it with the quantity
+						productItem['price'] = price * quantity;
 						return true;
 					} else return false;
 				});
@@ -57,6 +59,8 @@ class CartService {
 								cart_id: cart.id,
 								product_id,
 								quantity,
+								// Price is the price per unit, that is why we multiply it with the quantity
+								price: price * quantity,
 							},
 						],
 					});
