@@ -17,9 +17,9 @@ class CartService {
 	getById = async (req, res, next) => {
 		try {
 			const user_id = req.query.user_id;
-			const carts = await this.cartRepository.getById(user_id);
+			const cart = await this.cartRepository.getById(user_id);
 			this.logger.info(`200 - Got Cart details - /carts/${user_id} - GET`);
-			return res.status(200).json(carts);
+			return res.status(200).json(cart);
 		} catch (error) {
 			next(error);
 		}
@@ -34,8 +34,8 @@ class CartService {
 			if (cart) {
 				// Checking if the provided product is already in the cart
 				const isProductInCart = cart.products.find(productItem => {
-					// If the provided product is already in the cart, update the quantity
-					// We are assuming that the only updated value is the quantity for the product
+					// If the provided product is already in the cart
+					// Update the quantity and price
 					if (productItem.product_id === product_id) {
 						productItem['quantity'] = quantity;
 						// Price is the price per unit, that is why we multiply it with the quantity

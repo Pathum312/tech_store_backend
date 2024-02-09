@@ -3,18 +3,20 @@ class OrderModel {
 		this.prisma = prisma;
 	}
 
-	get = async user_id => {
+	get = async ({ user_id, status }) => {
 		// Query filters
 		let where = {};
 		// Find orders by user id
 		// Only if user id is sent in params
 		if (user_id) where['user_id'] = user_id;
+		// Find a order by a specific status
+		if (status) where['status'] = status;
 		return await this.prisma.order.findMany({ where, include: { items: true } });
 	};
 
-	getById = async user_id => {
+	getById = async id => {
 		return await this.prisma.order.findUnique({
-			where: { user_id },
+			where: { id },
 			include: { items: true },
 		});
 	};
@@ -44,21 +46,21 @@ class OrderModel {
 		});
 	};
 
-	update = async ({ user_id, status }) => {
+	update = async ({ id, status }) => {
 		// Update data
 		let data = {};
 		// Check if status is not null
 		data['status'] = status;
-		return await this.prisma.order.update({ where: { user_id }, data });
+		return await this.prisma.order.update({ where: { id }, data });
 	};
 
-	destroy = async order_id => {
+	destroy = async id => {
 		// Deleting all the order items
 		const deleteOrderItems = await this.prisma.order_item.deleteMany({
-			where: { order_id },
+			where: { order_id: id },
 		});
 		// Deleting the order
-		const deleteOrder = await this.prisma.cart.delete({ where: { id: order_id } });
+		const deleteOrder = await this.prisma.cart.delete({ where: { id } });
 		// This will first delete the order items, then finally delete the order
 		return await this.prisma.$transaction([deleteOrderItems, deleteOrder]);
 	};
