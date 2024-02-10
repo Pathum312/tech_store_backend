@@ -4,6 +4,7 @@ const CategoryService = require('./category.service');
 const ProductService = require('./product.service');
 const CartService = require('./cart.service');
 const OrderService = require('./order.service');
+const ReviewService = require('./review.service');
 
 module.exports = {
 	UserService,
@@ -12,4 +13,5 @@ module.exports = {
 	ProductService,
 	CartService,
 	OrderService,
+	ReviewService,
 };

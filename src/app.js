@@ -10,6 +10,7 @@ const {
 	ProductController,
 	CartController,
 	OrderController,
+	ReviewController,
 } = require('./controllers');
 const app = express();
 
@@ -25,6 +26,7 @@ app.use('/categories', CategoryController);
 app.use('/products', ProductController);
 app.use('/carts', CartController);
 app.use('/orders', OrderController);
+app.use('/reviews', ReviewController);
 // Custom error logger
 app.use(handleErrors);
 

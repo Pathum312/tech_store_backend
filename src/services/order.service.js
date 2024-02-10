@@ -58,7 +58,7 @@ class OrderService {
 			if (!order) return next({ status: 500, message: `Order does not exist` });
 			// Finally delete the order
 			await this.orderRepository.destroy(id);
-			this.logger.info(`200 - Order Deleted - /corders/${id} - DELETE`);
+			this.logger.info(`200 - Order Deleted - /orders/${id} - DELETE`);
 			return res.status(200).json({ message: `Order Deleted` });
 		} catch (error) {
 			next(error);
