@@ -5,6 +5,12 @@ const { UserRepository } = require('../repositories');
 const { UserService } = require('../services');
 const { Prisma } = require('../config');
 const { logger } = require('../middleware/log.middleware');
+/**
+ * @swagger
+ * tags:
+ *   - name: User
+ *     description: API endpoints for user account management
+ */
 const userService = new UserService({
 	userRepository: new UserRepository({
 		userModel: new UserModel({ prisma: Prisma }),
