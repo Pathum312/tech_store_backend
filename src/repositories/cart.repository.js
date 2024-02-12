@@ -11,12 +11,12 @@ class CartRepository {
 		return await this.cartModel.getById(user_id);
 	};
 
-	create = async ({ user_id, product_id, quantity }) => {
-		return await this.cartModel.create({ user_id, product_id, quantity });
+	create = async ({ user_id, product_id, quantity, price }) => {
+		return await this.cartModel.create({ user_id, product_id, quantity, price });
 	};
 
-	update = async ({ user_id, products }) => {
-		return await this.cartModel.update({ user_id, products });
+	update = async ({ cart_id, product_id, quantity, price, type }) => {
+		return await this.cartModel.update({ cart_id, product_id, quantity, price, type });
 	};
 
 	destroyItem = async ({ cart_id, product_id }) => {

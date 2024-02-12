@@ -9,7 +9,7 @@ class ReviewService {
 			const { product_id, rating, comment, user_id } = req.query;
 			// Add a review to DB
 			await this.reviewRepository.create({ product_id, rating, comment, user_id });
-			this.logger.info(`201 - Review Added - /reviews - POST - ${req.body}`);
+			this.logger.info(`201 - Review Added - /reviews - POST - ${JSON.stringify(req.body)}`);
 			return res.status(201).json('Review Added');
 		} catch (error) {
 			next(error);
@@ -25,7 +25,7 @@ class ReviewService {
 			if (!review) return next({ status: 500, message: 'Review does not exist' });
 			// Finally update the review with the updated details
 			await this.reviewRepository.update({ id, rating, comment });
-			this.logger.info(`200 - Review Updated - /reviews - PUT - ${req.body}`);
+			this.logger.info(`200 - Review Updated - /reviews - PUT - ${JSON.stringify(req.body)}`);
 			return res.status(200).json('Review Updated');
 		} catch (error) {
 			next(error);

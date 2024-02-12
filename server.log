@@ -1353,3 +1353,1032 @@ Cannot select both '$scalars: true' and a specific scalar field 'carts'. - /user
 [info] - 07-02-24 22:09:23 - Server is running on http://localhost:8000
 [info] - 07-02-24 22:09:42 - Server is running on http://localhost:8000
 [info] - 07-02-24 22:09:56 - Server is running on http://localhost:8000
+[info] - 11-02-24 07:20:59 - Server is running on http://localhost:8000
+[info] - 11-02-24 07:25:28 - 200 - User Johnny Logged In - /auth/login - POST - {"email":"johndoe@test.com","password":"test123"}
+[info] - 11-02-24 07:26:39 - 200 - Got Category List - /categories - GET - {}
+[info] - 11-02-24 07:26:45 - 200 - Got Category List - /categories - GET - {}
+[info] - 11-02-24 07:36:53 - 201 - Added Product AC Odyssey - /products - POST - {"name":"AC Odyssey","description":"Better than Valhalla and Mirage","price":12.25,"stock":20,"images":["google.com"],"category_id":"65bf8d7ee8211ce360b66abc","user_id":"65af770b40e4451c22e0268d"}
+[info] - 11-02-24 07:40:41 - 200 - Got Product List - /products - GET - {}
+[info] - 11-02-24 07:54:11 - 200 - Product AC Odyssey updated - /products - PUT - {"id":"65c82bbc0d2685daaddf1946","name":"AC Odyssey","description":"Better than Valhalla and Mirage","price":12.25,"stock":20,"images":["google.com"],"category_id":"65bf8d7ee8211ce360b66abc"}
+[error] - 11-02-24 07:54:32 - 400 - Expected ',' or ']' after array element in JSON at position 166 - /products - PUT - ::ffff:127.0.0.1
+[info] - 11-02-24 07:54:40 - 200 - Product AC Odyssey updated - /products - PUT - {"id":"65c82bbc0d2685daaddf1946","name":"AC Odyssey","description":"Better than Valhalla and Mirage","price":12.25,"stock":20,"images":["google.com","pornhub.com"],"category_id":"65bf8d7ee8211ce360b66abc"}
+[info] - 11-02-24 07:54:51 - 200 - Got Product List - /products - GET - {}
+[info] - 11-02-24 08:17:36 - 200 - Product AC Odyssey deleted - /products/65c82bbc0d2685daaddf1946 - DELETE
+[info] - 11-02-24 08:17:39 - 200 - Got Product List - /products - GET - {}
+[info] - 11-02-24 08:17:44 - 201 - Added Product AC Odyssey - /products - POST - {"name":"AC Odyssey","description":"Better than Valhalla and Mirage","price":12.25,"stock":20,"images":["google.com"],"category_id":"65bf8d7ee8211ce360b66abc","user_id":"65af770b40e4451c22e0268d"}
+[error] - 11-02-24 08:17:47 - 400 - Product AC Odyssey doesn't exist - /products - PUT - ::ffff:127.0.0.1
+[info] - 11-02-24 08:17:54 - 200 - Got Product List - /products - GET - {}
+[info] - 11-02-24 08:18:09 - 200 - Product AC Odyssey updated - /products - PUT - {"id":"65c835500d2685daaddf1947","name":"AC Odyssey","description":"Better than Valhalla and Mirage","price":12.25,"stock":20,"images":["google.com","pornhub.com"],"category_id":"65bf8d7ee8211ce360b66abc"}
+[info] - 11-02-24 08:18:12 - 200 - Got Product List - /products - GET - {}
+[error] - 11-02-24 10:43:46 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[error] - 11-02-24 10:47:58 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 10:53:56 - Server is running on http://localhost:8000
+[error] - 11-02-24 10:53:57 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 10:55:01 - Server is running on http://localhost:8000
+[error] - 11-02-24 10:55:03 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 10:57:48 - Server is running on http://localhost:8000
+[error] - 11-02-24 10:57:53 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:18:33
+
+  15 };
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+→ 18 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+         products: {
+           create: {
+             quantity: 2,
+             product_id: "65c835500d2685daaddf1947",
+     +       price: Float
+           }
+         }
+       }
+     })
+
+Argument `price` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 10:59:27 - Server is running on http://localhost:8000
+[info] - 11-02-24 10:59:30 - Server is running on http://localhost:8000
+[error] - 11-02-24 10:59:34 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:18:33
+
+  15 };
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+→ 18 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+         products: {
+           create: {
+             quantity: 2,
+             product_id: "65c835500d2685daaddf1947",
+     +       price: Float
+           }
+         }
+       }
+     })
+
+Argument `price` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:01:03 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:01:14 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:19:33
+
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+  18 	console.log(JSON.stringify({ user_id, product_id, quantity, price }));
+→ 19 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+         products: {
+           create: {
+             quantity: 2,
+             product_id: "65c835500d2685daaddf1947",
+     +       price: Float
+           }
+         }
+       }
+     })
+
+Argument `price` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:02:37 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:02:41 - 500 - Assignment to constant variable. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:03:15 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:03:18 - 500 - Assignment to constant variable. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:03:35 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:03:40 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:03:43 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:19:33
+
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+  18 	console.log(JSON.stringify({ user_id, product_id, quantity, price }));
+→ 19 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+         products: {
+           create: {
+             quantity: 2,
+             product_id: "65c835500d2685daaddf1947",
+     +       price: Float
+           }
+         }
+       }
+     })
+
+Argument `price` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:04:40 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:04:54 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:04:56 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:04:59 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:19:33
+
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+  18 	console.log(JSON.stringify({ user_id, product_id, quantity, price }));
+→ 19 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65b8bffbe3179d8b60a05cf5",
+         products: {
+           create: {
+             quantity: 2,
+             product_id: "65c835500d2685daaddf1947",
+     +       price: Float
+           }
+         }
+       }
+     })
+
+Argument `price` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:05:41 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:06:03 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:06:56 - 200 - Item added to cart - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 11:07:11 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:07:43 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:08:06 - 500 - 
+Invalid `this.prisma.cart.update()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:38:33
+
+  35 let data = {};
+  36 // Check if products array is not null
+  37 if (products) data['products'] = products;
+→ 38 return await this.prisma.cart.update({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5"
+       },
+       data: {
+         products: [
+           {
+             id: "65c85cf8821c2c1d8c35cc75",
+             quantity: 1,
+             price: 12.25,
+             cart_id: "65c85cf7821c2c1d8c35cc74",
+             product_id: "65c835500d2685daaddf1947"
+           }
+         ]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `products`: Invalid value provided. Expected Cart_ItemUpdateManyWithoutCartNestedInput or Cart_ItemUncheckedUpdateManyWithoutCartNestedInput, provided (Object). - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:08:34 - Server is running on http://localhost:8000
+[info] - 11-02-24 11:09:44 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:09:48 - 500 - 
+Invalid `this.prisma.cart.update()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:38:33
+
+  35 let data = {};
+  36 // Check if products array is not null
+  37 if (products) data['products'] = products;
+→ 38 return await this.prisma.cart.update({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5"
+       },
+       data: {
+         products: [
+           {
+             id: "65c85cf8821c2c1d8c35cc75",
+             quantity: 1,
+             price: 12.25,
+             cart_id: "65c85cf7821c2c1d8c35cc74",
+             product_id: "65c835500d2685daaddf1947"
+           }
+         ]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `products`: Invalid value provided. Expected Cart_ItemUpdateManyWithoutCartNestedInput or Cart_ItemUncheckedUpdateManyWithoutCartNestedInput, provided (Object). - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:10:43 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:10:48 - 500 - 
+Invalid `this.prisma.cart.update()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:38:33
+
+  35 let data = {};
+  36 // Check if products array is not null
+  37 if (products) data['products'] = products;
+→ 38 return await this.prisma.cart.update({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5"
+       },
+       data: {
+         products: [
+           {
+             id: "65c85cf8821c2c1d8c35cc75",
+             quantity: 1,
+             price: 12.25,
+             cart_id: "65c85cf7821c2c1d8c35cc74",
+             product_id: "65c835500d2685daaddf1947"
+           }
+         ]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `products`: Invalid value provided. Expected Cart_ItemUpdateManyWithoutCartNestedInput or Cart_ItemUncheckedUpdateManyWithoutCartNestedInput, provided (Object). - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:13:49 - Server is running on http://localhost:8000
+[error] - 11-02-24 11:13:54 - 500 - 
+Invalid `this.prisma.cart.update()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:38:33
+
+  35 let data = {};
+  36 // Check if products array is not null
+  37 if (products) data['products'] = products;
+→ 38 return await this.prisma.cart.update({
+       where: {
+         user_id: "65b8bffbe3179d8b60a05cf5"
+       },
+       data: {
+         products: [
+           {
+             id: "65c85cf8821c2c1d8c35cc75",
+             quantity: 1,
+             price: 12.25,
+             cart_id: "65c85cf7821c2c1d8c35cc74",
+             product_id: "65c835500d2685daaddf1947"
+           }
+         ]
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+       }
+     })
+
+Argument `products`: Invalid value provided. Expected Cart_ItemUpdateManyWithoutCartNestedInput or Cart_ItemUncheckedUpdateManyWithoutCartNestedInput, provided (Object). - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 11:42:03 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:18:14 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:43:38 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:43:40 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:44:37 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:45:37 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:47:08 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:47:20 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:47:40 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:48:07 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:49:41 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:50:08 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:50:30 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:52:18 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:52:25 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:52:51 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:52:57 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:54:09 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:54:24 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:54:30 - Server is running on http://localhost:8000
+[error] - 11-02-24 12:55:32 - 500 - Cannot read properties of undefined (reading 'update') - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 12:58:00 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:58:11 - Server is running on http://localhost:8000
+[info] - 11-02-24 12:58:34 - Server is running on http://localhost:8000
+[error] - 11-02-24 12:58:46 - 500 - Cannot read properties of undefined (reading 'update') - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 12:59:19 - Server is running on http://localhost:8000
+[error] - 11-02-24 12:59:23 - 500 - Cannot read properties of undefined (reading 'update') - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 12:59:42 - Server is running on http://localhost:8000
+[error] - 11-02-24 13:00:03 - 500 - Cannot read properties of undefined (reading 'update') - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 13:02:14 - Server is running on http://localhost:8000
+[error] - 11-02-24 13:02:19 - 500 - 
+Invalid `this.prisma.cart_Item.update()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:39:40
+
+  36 switch (type) {
+  37 	// If update, update the changed quantity and price
+  38 	case 'UPDATE':
+→ 39 		return await this.prisma.cart_Item.update({
+       where: {
+         cart_id: "65c85cf7821c2c1d8c35cc74",
+         product_id: "65c835500d2685daaddf1947",
+     ?   id?: String,
+     ?   AND?: Cart_ItemWhereInput | Cart_ItemWhereInput[],
+     ?   OR?: Cart_ItemWhereInput[],
+     ?   NOT?: Cart_ItemWhereInput | Cart_ItemWhereInput[],
+     ?   quantity?: IntFilter | Int,
+     ?   price?: FloatFilter | Float,
+     ?   cart?: CartRelationFilter | CartWhereInput,
+     ?   product?: ProductRelationFilter | ProductWhereInput
+       },
+       data: {
+         quantity: 1,
+         price: 12.25
+       }
+     })
+
+Argument `where` of type Cart_ItemWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 13:34:00 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:34:11 - 200 - Cart Updated - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 13:34:50 - 200 - Item added to cart - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 13:36:29 - 200 - Cart Updated - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 13:36:47 - 200 - Cart Updated - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 13:38:19 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 13:40:13 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:40:27 - 200 - Cart Updated - /carts/add-to-cart - POST - [object Object]
+[info] - 11-02-24 13:40:29 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 13:41:37 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:41:52 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:42:11 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:42:23 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 11-02-24 13:43:29 - Server is running on http://localhost:8000
+[info] - 11-02-24 13:43:47 - Server is running on http://localhost:8000
+[info] - 11-02-24 14:13:35 - 201 - Added Product AC Oringins - /products - POST - {"name":"AC Oringins","description":"Better than Valhalla and Mirage as well","price":9.75,"stock":20,"images":["google.com"],"category_id":"65bf8d7ee8211ce360b66abc","user_id":"65af770b40e4451c22e0268d"}
+[info] - 11-02-24 14:13:43 - 200 - Got Product List - /products - GET - {}
+[error] - 11-02-24 14:14:21 - 500 - Cannot read properties of undefined (reading 'create') - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 14:14:43 - Server is running on http://localhost:8000
+[info] - 11-02-24 14:14:51 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":6,"price":9.75}
+[info] - 11-02-24 14:14:54 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:22:05 - 200 - Got Cart List - /carts - GET - {}
+[error] - 11-02-24 14:39:43 - 500 - Cannot read properties of undefined (reading 'delete') - /carts/delete-item - PATCH - ::ffff:127.0.0.1
+[info] - 11-02-24 14:40:03 - Server is running on http://localhost:8000
+[info] - 11-02-24 14:40:11 - 200 - Item Removed - /carts/delete-item - PATCH - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16"}
+[info] - 11-02-24 14:40:16 - 200 - Got Cart List - /carts - GET - {}
+[error] - 11-02-24 14:41:39 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: undefined,
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` or `user_id` arguments. Available options are marked with ?. - /carts/65c87fa1a4b5c062f0c0f5cf%22 - GET - ::ffff:127.0.0.1
+[info] - 11-02-24 14:44:29 - 200 - Got Cart List - /carts - GET - {}
+[error] - 11-02-24 14:44:39 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: undefined,
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` or `user_id` arguments. Available options are marked with ?. - /carts/65b8bffbe3179d8b60a05cf5 - GET - ::ffff:127.0.0.1
+[info] - 11-02-24 14:45:54 - Server is running on http://localhost:8000
+[error] - 11-02-24 14:46:00 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: undefined,
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` or `user_id` arguments. Available options are marked with ?. - /carts/65b8bffbe3179d8b60a05cf5 - GET - ::ffff:127.0.0.1
+[info] - 11-02-24 14:46:03 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:46:07 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":6,"price":9.75}
+[info] - 11-02-24 14:46:11 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:46:27 - Server is running on http://localhost:8000
+[error] - 11-02-24 14:46:33 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: undefined,
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` or `user_id` arguments. Available options are marked with ?. - /carts/65b8bffbe3179d8b60a05cf5 - GET - ::ffff:127.0.0.1
+[info] - 11-02-24 14:47:05 - Server is running on http://localhost:8000
+[info] - 11-02-24 14:47:09 - 200 - Got Cart details - /carts/65b8bffbe3179d8b60a05cf5 - GET
+[info] - 11-02-24 14:47:22 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 14:48:12 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":2,"price":9.75}
+[info] - 11-02-24 14:48:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 14:53:49 - 200 - Item Removed - /carts/delete-item - PATCH - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16"}
+[info] - 11-02-24 14:53:53 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 11-02-24 14:54:58 - 500 - Cannot read properties of undefined (reading 'deleteMany') - /carts/65ac72567fdf1e47f031f338 - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 14:55:12 - Server is running on http://localhost:8000
+[error] - 11-02-24 14:55:18 - 500 - All elements of the array need to be Prisma Client promises. Hint: Please make sure you are not awaiting the Prisma client calls you intended to pass in the $transaction function. - /carts/65ac72567fdf1e47f031f338 - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 14:55:42 - Server is running on http://localhost:8000
+[error] - 11-02-24 14:55:45 - 500 - An active cart is not found - /carts/65ac72567fdf1e47f031f338 - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 14:55:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 14:55:55 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:56:12 - 200 - Cart Deleted - /carts/65b8bffbe3179d8b60a05cf5 - DELETE
+[info] - 11-02-24 14:56:17 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:58:30 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":5,"price":9.75}
+[info] - 11-02-24 14:58:35 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 14:58:39 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 14:58:45 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 20:45:33 - Server is running on http://localhost:8000
+[info] - 11-02-24 20:46:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 20:49:07 - Server is running on http://localhost:8000
+[info] - 11-02-24 20:49:23 - Server is running on http://localhost:8000
+[error] - 11-02-24 20:49:39 - 500 - 
+Invalid `this.prisma.cart_Item.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:48:40
+
+  45 data['cart_id'] = cart_id;
+  46 // Add product reference id
+  47 data['product_id'] = product_id;
+→ 48 return await this.prisma.cart_Item.create({
+       data: {
+         price: NaN,
+         cart_id: "65c8933d4d6dfc5e8ccc8f98",
+         product_id: undefined,
+     +   quantity: Int
+       }
+     })
+
+Argument `quantity` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 20:50:19 - Server is running on http://localhost:8000
+[info] - 11-02-24 20:50:56 - Server is running on http://localhost:8000
+[info] - 11-02-24 20:56:52 - Server is running on http://localhost:8000
+[error] - 11-02-24 20:56:54 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: undefined,
+     ?   id?: String,
+     ?   AND?: CartWhereInput | CartWhereInput[],
+     ?   OR?: CartWhereInput[],
+     ?   NOT?: CartWhereInput | CartWhereInput[],
+     ?   products?: Cart_ItemListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         products: true
+       }
+     })
+
+Argument `where` of type CartWhereUniqueInput needs at least one of `id` or `user_id` arguments. Available options are marked with ?. - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 20:57:33 - Server is running on http://localhost:8000
+[error] - 11-02-24 20:57:39 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:41:34
+
+  38 		price: product.price,
+  39 	});
+  40 });
+→ 41 return await this.prisma.order.create({
+       data: {
+         total_amount: 48.75,
+         items: {
+           createMany: [
+             {
+               product_id: "65c888b7fe5bed2dd4d4ec16",
+               quantity: 5,
+               price: 48.75
+             }
+           ]
+         },
+     +   user: {
+     +     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing. - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 20:58:04 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 11-02-24 20:58:37 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:41:34
+
+  38 		price: product.price,
+  39 	});
+  40 });
+→ 41 return await this.prisma.order.create({
+       data: {
+         total_amount: 48.75,
+         items: {
+           createMany: [
+             {
+               product_id: "65c888b7fe5bed2dd4d4ec16",
+               quantity: 5,
+               price: 48.75
+             }
+           ]
+         },
+     +   user: {
+     +     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing. - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:00:13 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:00:18 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:41:34
+
+  38 		price: product.price,
+  39 	});
+  40 });
+→ 41 return await this.prisma.order.create({
+       data: {
+         total_amount: 48.75,
+         items: {
+           createMany: [
+             {
+               product_id: "65c888b7fe5bed2dd4d4ec16",
+               quantity: 5,
+               price: 48.75
+             }
+           ]
+         },
+     +   user: {
+     +     create: UserCreateWithoutOrdersInput | UserUncheckedCreateWithoutOrdersInput,
+     +     connectOrCreate: UserCreateOrConnectWithoutOrdersInput,
+     +     connect: UserWhereUniqueInput
+     +   }
+       }
+     })
+
+Argument `user` is missing. - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:03:56 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:04:09 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:04:39 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:04:45 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:41:34
+
+  38 		price: product.price,
+  39 	});
+  40 });
+→ 41 return await this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75,
+         items: {
+           createMany: [
+             {
+               product_id: "65c888b7fe5bed2dd4d4ec16",
+               quantity: 5,
+               price: 48.75
+             }
+           ]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         }
+       }
+     })
+
+Argument `createMany`: Invalid value provided. Expected Order_ItemCreateManyOrdersInputEnvelope, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:13:22 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:15:14 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:15:46 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:16:13 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:16:17 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:42:40
+
+  39 	});
+  40 });
+  41 // Add the order
+→ 42 const addedOrder = this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75,
+         items: {
+           createMany: [
+             {
+               product_id: "65c888b7fe5bed2dd4d4ec16",
+               quantity: 5,
+               price: 48.75
+             }
+           ]
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+         }
+       }
+     })
+
+Argument `createMany`: Invalid value provided. Expected Order_ItemCreateManyOrdersInputEnvelope, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:17:02 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:18:16 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:18:33 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:18:49 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:18:57 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:19:04 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:42:40
+
+  39 	});
+  40 });
+  41 // Add the order
+→ 42 const addedOrder = this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75
+       }
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     })
+
+Argument `data`: Invalid value provided. Expected Order_ItemCreateInput or Order_ItemUncheckedCreateInput, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:20:08 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:22:52 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:22:57 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:42:40
+
+  39 	});
+  40 });
+  41 // Add the order
+→ 42 const addedOrder = this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75
+       }
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     })
+
+Argument `data`: Invalid value provided. Expected Order_ItemCreateInput or Order_ItemUncheckedCreateInput, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:26:40 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:27:02 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:27:10 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:36:40
+
+  33 	totalAmount += product.price;
+  34 });
+  35 // Add the order
+→ 36 const addedOrder = this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75
+       }
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     })
+
+Argument `data`: Invalid value provided. Expected Order_ItemCreateInput or Order_ItemUncheckedCreateInput, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:27:48 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:28:18 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:28:27 - 500 - 
+Invalid `this.prisma.order_Item.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:53:39
+
+  50 	});
+  51 });
+  52 // Finally add all the products to the order
+→ 53 return await this.prisma.order_Item.create({
+       data: [
+         {
+           order_id: "65c8eea3b57280748aeb1cd4",
+           product_id: "65c888b7fe5bed2dd4d4ec16",
+           quantity: 5,
+           price: 48.75
+         }
+       ]
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     })
+
+Argument `data`: Invalid value provided. Expected Order_ItemCreateInput or Order_ItemUncheckedCreateInput, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:29:09 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:29:12 - 500 - 
+Invalid `this.prisma.order_Item.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:54:39
+
+  51 });
+  52 console.log(JSON.stringify(items));
+  53 // Finally add all the products to the order
+→ 54 return await this.prisma.order_Item.create({
+       data: [
+         {
+           order_id: "65c8eed045a145a3f7805e5a",
+           product_id: "65c888b7fe5bed2dd4d4ec16",
+           quantity: 5,
+           price: 48.75
+         }
+       ]
+       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     })
+
+Argument `data`: Invalid value provided. Expected Order_ItemCreateInput or Order_ItemUncheckedCreateInput, provided (Object). - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:32:02 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:32:26 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:32:32 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:32:35 - 500 - 
+Invalid `this.prisma.order.create()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:36:40
+
+  33 	totalAmount += product.price;
+  34 });
+  35 // Add the order
+→ 36 const addedOrder = this.prisma.order.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         total_amount: 48.75,
+     +   order_id: String
+       }
+     })
+
+Argument `order_id` is missing. - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:33:07 - Server is running on http://localhost:8000
+[error] - 11-02-24 21:33:12 - 500 - Cannot read properties of undefined (reading 'info') - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 21:33:51 - Server is running on http://localhost:8000
+[info] - 11-02-24 21:35:27 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":5,"price":9.75}
+[info] - 11-02-24 21:35:46 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 21:36:42 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 11-02-24 21:37:30 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 22:26:25 - Server is running on http://localhost:8000
+[info] - 11-02-24 22:28:37 - Server is running on http://localhost:8000
+[info] - 11-02-24 22:28:43 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 22:32:10 - 200 - Order Updated - /orders - PUT - {"id":"65c8f0907e9960d7566b7f0c","status":"ACCEPTED"}
+[info] - 11-02-24 22:32:44 - Server is running on http://localhost:8000
+[info] - 11-02-24 22:32:52 - 200 - Order Updated - /orders - PUT - {"id":"65c8f0907e9960d7566b7f0c","status":"ACCEPTED"}
+[info] - 11-02-24 22:33:13 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 22:33:44 - 200 - Order Updated - /orders - PUT - {"id":"65c8f0907e9960d7566b7f0c","status":"PENDING"}
+[info] - 11-02-24 22:39:15 - 200 - Order Updated - /orders - PUT - {"id":"65c8f0907e9960d7566b7f0c","status":"PENDING"}
+[info] - 11-02-24 22:39:23 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 23:04:55 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:05:38 - Server is running on http://localhost:8000
+[error] - 11-02-24 23:06:42 - 500 - Cannot read properties of undefined (reading 'deleteMany') - /orders/65c8f0907e9960d7566b7f0c - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 23:06:56 - Server is running on http://localhost:8000
+[error] - 11-02-24 23:07:00 - 500 - 
+Invalid `this.prisma.cart.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:70:52
+
+  67 	where: { order_id: id },
+  68 });
+  69 // Deleting the order
+→ 70 const deleteOrder = await this.prisma.cart.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - /orders/65c8f0907e9960d7566b7f0c - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 23:07:12 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 23:08:34 - 200 - Got Product List - /products - GET - {}
+[info] - 11-02-24 23:08:44 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c888b7fe5bed2dd4d4ec16","quantity":5,"price":9.75}
+[info] - 11-02-24 23:08:49 - 200 - Got Cart List - /carts - GET - {}
+[info] - 11-02-24 23:08:57 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 23:10:15 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 11-02-24 23:10:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 11-02-24 23:10:48 - 500 - quantity is not defined - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 23:12:04 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:12:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 23:12:16 - 200 - Got Order List - /orders - GET - {}
+[error] - 11-02-24 23:12:40 - 500 - 
+Invalid `this.prisma.cart.delete()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:70:52
+
+  67 	where: { order_id: id },
+  68 });
+  69 // Deleting the order
+→ 70 const deleteOrder = await this.prisma.cart.delete(
+An operation failed because it depends on one or more records that were required but not found. Record to delete does not exist. - /orders/65c906a0c4b9bc3c896e7251 - DELETE - ::ffff:127.0.0.1
+[info] - 11-02-24 23:13:11 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:13:19 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 23:14:24 - 200 - Got Order List - /orders - GET - {}
+[info] - 11-02-24 23:15:05 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:21:48 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:36:14 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:36:34 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:36:47 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 11-02-24 23:36:56 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 11-02-24 23:37:36 - Server is running on http://localhost:8000
+[info] - 11-02-24 23:37:44 - 200 - Got Order List - /orders - GET - {}
+[error] - 11-02-24 23:37:55 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[info] - 11-02-24 23:38:09 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 11-02-24 23:38:21 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 11-02-24 23:38:35 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 12-02-24 11:14:30 - Server is running on http://localhost:8000
+[info] - 12-02-24 11:14:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 12-02-24 11:14:38 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 12-02-24 11:14:41 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 12-02-24 11:18:39 - Server is running on http://localhost:8000
+[info] - 12-02-24 11:18:50 - Server is running on http://localhost:8000
+[error] - 12-02-24 11:18:57 - 500 - 
+Invalid `transaction.product.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:53:47
+
+  50 // Iterate through all the order items
+  51 for (const item in items) {
+  52 	// Find the products in the order
+→ 53 	const product = await transaction.product.findUnique({
+       where: {
+         id: undefined,
+     ?   AND?: ProductWhereInput | ProductWhereInput[],
+     ?   OR?: ProductWhereInput[],
+     ?   NOT?: ProductWhereInput | ProductWhereInput[],
+     ?   name?: StringFilter | String,
+     ?   description?: StringFilter | String,
+     ?   rating?: FloatFilter | Float,
+     ?   price?: FloatFilter | Float,
+     ?   stock?: IntFilter | Int,
+     ?   images?: StringNullableListFilter,
+     ?   category_id?: StringFilter | String,
+     ?   user_id?: StringFilter | String,
+     ?   discount_id?: StringNullableFilter | String | Null,
+     ?   cart_items?: Cart_ItemListRelationFilter,
+     ?   orders?: Order_ItemListRelationFilter,
+     ?   reviews?: ReviewListRelationFilter,
+     ?   category?: CategoryRelationFilter | CategoryWhereInput,
+     ?   user?: UserRelationFilter | UserWhereInput,
+     ?   discount?: DiscountNullableRelationFilter | DiscountWhereInput | Null
+       }
+     })
+
+Argument `where` of type ProductWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /orders - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 11:19:21 - Server is running on http://localhost:8000
+[info] - 12-02-24 11:19:25 - 200 - Got Order List - /orders - GET - {}
+[info] - 12-02-24 11:19:29 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 12-02-24 11:19:39 - 500 - 
+Invalid `transaction.product.update()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:55:31
+
+  52 // Find the products in the order
+  53 const product = await transaction.product.findUnique({ where: { id: item.product_id } });
+  54 // Finally reduce the stock of the product with the quantity bought by user
+→ 55 await transaction.product.update({
+       where: {
+         id: "65c835500d2685daaddf1947"
+       },
+       data: {
+         quantity: NaN,
+         ~~~~~~~~
+     ?   name?: String | StringFieldUpdateOperationsInput,
+     ?   description?: String | StringFieldUpdateOperationsInput,
+     ?   rating?: Float | FloatFieldUpdateOperationsInput,
+     ?   price?: Float | FloatFieldUpdateOperationsInput,
+     ?   stock?: Int | IntFieldUpdateOperationsInput,
+     ?   images?: ProductUpdateimagesInput | String[],
+     ?   cart_items?: Cart_ItemUpdateManyWithoutProductNestedInput,
+     ?   orders?: Order_ItemUpdateManyWithoutProductNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutProductNestedInput,
+     ?   category?: CategoryUpdateOneRequiredWithoutProductsNestedInput,
+     ?   user?: UserUpdateOneRequiredWithoutProductsNestedInput,
+     ?   discount?: DiscountUpdateOneWithoutProductsNestedInput
+       }
+     })
+
+Unknown argument `quantity`. Available options are marked with ?. - /orders - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 11:20:43 - Server is running on http://localhost:8000
+[error] - 12-02-24 11:20:47 - 500 - 
+Invalid `transaction.product.update()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:56:31
+
+  53 // Find the products in the order
+  54 const product = await transaction.product.findUnique({ where: { id: item.product_id } });
+  55 // Finally reduce the stock of the product with the quantity bought by user
+→ 56 await transaction.product.update({
+       where: {
+         id: "65c835500d2685daaddf1947"
+       },
+       data: {
+         quantity: NaN,
+         ~~~~~~~~
+     ?   name?: String | StringFieldUpdateOperationsInput,
+     ?   description?: String | StringFieldUpdateOperationsInput,
+     ?   rating?: Float | FloatFieldUpdateOperationsInput,
+     ?   price?: Float | FloatFieldUpdateOperationsInput,
+     ?   stock?: Int | IntFieldUpdateOperationsInput,
+     ?   images?: ProductUpdateimagesInput | String[],
+     ?   cart_items?: Cart_ItemUpdateManyWithoutProductNestedInput,
+     ?   orders?: Order_ItemUpdateManyWithoutProductNestedInput,
+     ?   reviews?: ReviewUpdateManyWithoutProductNestedInput,
+     ?   category?: CategoryUpdateOneRequiredWithoutProductsNestedInput,
+     ?   user?: UserUpdateOneRequiredWithoutProductsNestedInput,
+     ?   discount?: DiscountUpdateOneWithoutProductsNestedInput
+       }
+     })
+
+Unknown argument `quantity`. Available options are marked with ?. - /orders - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 11:22:02 - Server is running on http://localhost:8000
+[info] - 12-02-24 11:22:09 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 12-02-24 11:22:44 - Server is running on http://localhost:8000
+[info] - 12-02-24 11:32:39 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"65c835500d2685daaddf1947","quantity":2,"price":12.25}
+[info] - 12-02-24 11:32:44 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 12-02-24 11:32:52 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 12-02-24 11:32:57 - 200 - Got Order List - /orders - GET - {}
+[info] - 12-02-24 11:33:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 12-02-24 11:33:09 - 200 - Got Product List - /products - GET - {}

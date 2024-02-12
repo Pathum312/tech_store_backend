@@ -11,8 +11,8 @@ class OrderRepository {
 		return await this.orderModel.getById(id);
 	};
 
-	create = async ({ products }) => {
-		return await this.orderModel.create({ products });
+	create = async ({ user_id, products }) => {
+		return await this.orderModel.create({ user_id, products });
 	};
 
 	update = async ({ id, status }) => {

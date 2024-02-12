@@ -2,7 +2,7 @@ class OrderService {
 	constructor({ orderRepository, cartRepository, logger }) {
 		this.orderRepository = orderRepository;
 		this.cartRepository = cartRepository;
-		this.logger - logger;
+		this.logger = logger;
 	}
 
 	get = async (req, res, next) => {
@@ -18,16 +18,18 @@ class OrderService {
 
 	create = async (req, res, next) => {
 		try {
-			const { user_id } = req.query;
+			const { user_id } = req.body;
 			// Find cart using the proivided user id
 			const cart = await this.cartRepository.getById(user_id);
 			// If there is no cart, send an error
 			// This is becuase we need a cart to add the items to the order
 			if (!cart) return next({ status: 500, message: 'No items are added to cart' });
-			// Finally create an order
-			await this.orderRepository.create({ products: cart.products });
-			this.logger.info(`201 - Order Added - /orders - POST - ${req.body}`);
-			return res.status(201).json('Order Added');
+			// Create an order
+			await this.orderRepository.create({ user_id, products: cart.products });
+			// Finally remove the cart
+			await this.cartRepository.destroy(cart.id);
+			this.logger.info(`201 - Order Added - /orders - POST - ${JSON.stringify(req.body)}`);
+			return res.status(201).json({ message: 'Order Added' });
 		} catch (error) {
 			next(error);
 		}
@@ -42,8 +44,8 @@ class OrderService {
 			if (!order) return next({ status: 500, message: 'Order does not exist' });
 			// Finally update the order status, which is the shipping/order status
 			await this.orderRepository.update({ id, status });
-			this.logger.info(`200 - Order Updated - /orders - PUT - ${req.body}`);
-			return res.status(200).json('Order Updated');
+			this.logger.info(`200 - Order Updated - /orders - PUT - ${JSON.stringify(req.body)}`);
+			return res.status(200).json({ message: 'Order Updated' });
 		} catch (error) {
 			next(error);
 		}

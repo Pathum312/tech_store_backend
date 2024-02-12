@@ -21,7 +21,7 @@ class OrderModel {
 		});
 	};
 
-	create = async ({ products }) => {
+	create = async ({ user_id, products }) => {
 		// Product items in the order
 		let items = [];
 		// Total amount for the products bought by user
@@ -38,11 +38,26 @@ class OrderModel {
 				price: product.price,
 			});
 		});
-		return await this.prisma.order.create({
-			data: {
-				total_amount: totalAmount,
-				items: { createMany: items },
-			},
+		return await this.prisma.$transaction(async transaction => {
+			// Add the order
+			const addedOrder = await transaction.order.create({
+				data: {
+					user_id,
+					total_amount: totalAmount,
+					items: { create: items },
+				},
+			});
+			// Iterate through all the order items
+			for (const item of items) {
+				// Find the products in the order
+				const product = await transaction.product.findUnique({ where: { id: item.product_id } });
+				// Finally reduce the stock of the product with the quantity bought by user
+				await transaction.product.update({
+					where: { id: item.product_id },
+					data: { stock: product.stock - item.quantity },
+				});
+			}
+			return addedOrder;
 		});
 	};
 
@@ -56,11 +71,11 @@ class OrderModel {
 
 	destroy = async id => {
 		// Deleting all the order items
-		const deleteOrderItems = await this.prisma.order_item.deleteMany({
+		const deleteOrderItems = this.prisma.order_Item.deleteMany({
 			where: { order_id: id },
 		});
 		// Deleting the order
-		const deleteOrder = await this.prisma.cart.delete({ where: { id } });
+		const deleteOrder = this.prisma.order.delete({ where: { id } });
 		// This will first delete the order items, then finally delete the order
 		return await this.prisma.$transaction([deleteOrderItems, deleteOrder]);
 	};

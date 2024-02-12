@@ -20,7 +20,7 @@ router.get('/', async (req, res, next) => {
 });
 
 router.post('/', async (req, res, next) => {
-	await orderService.addToCart(req, res, next);
+	await orderService.create(req, res, next);
 });
 
 router.put('/', async (req, res, next) => {
