@@ -13,7 +13,7 @@ class ProductModel {
 		if (user_id) where['user_id'] = user_id;
 		// Find all products for that particular category
 		if (category_id) where['category_id'] = category_id;
-		return await this.prisma.product.findMany({ where });
+		return await this.prisma.product.findMany({ where, include: { reviews: true } });
 	}
 
 	async getById(id) {

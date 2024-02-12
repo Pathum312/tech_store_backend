@@ -29,21 +29,23 @@ class ReviewModel {
 		data['product_id'] = product_id;
 		// User can sudmit a review without a comment, so check if comment is sent
 		if (comment) data['comment'] = comment;
-		// Firstly, add the review
-		const addedReview = await this.prisma.review.create({ data });
-		// Get all the reviews for the product, which includes the newly added review
-		const reviews = await this.prisma.review.get({ where: { product_id } });
-		// Calculating the average rating for the product
-		const avgRating = this.calculateRating(reviews);
-		// Finally updating the rating of the specific product
-		const updatedProduct = await this.prisma.product.update({
-			where: { id: product_id },
-			data: { rating: avgRating },
+		return await this.prisma.$transaction(async transaction => {
+			// Firstly, add the review
+			const addedReview = await transaction.review.create({ data });
+			// Get all the reviews for the product, which includes the newly added review
+			const reviews = await transaction.review.findMany({ where: { product_id } });
+			// Calculating the average rating for the product
+			const avgRating = this.calculateRating(reviews);
+			// Finally updating the rating of the specific product
+			const updatedProduct = await transaction.product.update({
+				where: { id: product_id },
+				data: { rating: avgRating },
+			});
+			// This will first add the new review
+			// Then get all the reviews including the new review
+			// Then finally updated the product rating
+			return [addedReview, reviews, updatedProduct];
 		});
-		// This will first add the new review
-		// Then get all the reviews including the new review
-		// Then finally updated the product rating
-		return await this.prisma.$transaction([addedReview, reviews, updatedProduct]);
 	};
 
 	update = async ({ id, rating, comment }) => {
@@ -53,29 +55,29 @@ class ReviewModel {
 		if (rating) data['rating'] = rating;
 		// Check if comment is not null
 		if (comment) data['comment'] = comment;
-		// Update the review with the new comment
-		const updatedReview = await this.prisma.update({ where: { id }, data });
-		if (data.rating) {
-			// Get all the reviews for the product, which includes the newly added review
-			const reviews = await this.prisma.get({
-				where: {
-					product_id: updatedReview.product_id,
-				},
-			});
-			// Calculating the average rating for the product
-			const avgRating = this.calculateRating(reviews);
-			// Finally update teh product with the new rating
-			const updatedProduct = await this.prisma.product.update({
-				where: { id: updatedReview.product_id },
-				data: { rating: avgRating },
-			});
-			// This will first update the review
-			// Then get all the reviews including the updated review
-			// Then finally updated the product rating
-			return await this.prisma.$transaction([updatedReview, reviews, updatedProduct]);
-		}
-		// If rating is not updated, just update comment of the review
-		return updatedReview;
+		return await this.prisma.$transaction(async transaction => {
+			// Update the review with the new comment
+			const updatedReview = await transaction.review.update({ where: { id }, data });
+			if (data.rating) {
+				// Get all the reviews for the product, which includes the newly added review
+				const reviews = await transaction.review.findMany({
+					where: { product_id: updatedReview.product_id },
+				});
+				// Calculating the average rating for the product
+				const avgRating = this.calculateRating(reviews);
+				// Finally update teh product with the new rating
+				const updatedProduct = await transaction.product.update({
+					where: { id: updatedReview.product_id },
+					data: { rating: avgRating },
+				});
+				// This will first update the review
+				// Then get all the reviews including the updated review
+				// Then finally updated the product rating
+				return [updatedReview, reviews, updatedProduct];
+			}
+			// If rating is not updated, just update comment of the review
+			return updatedReview;
+		});
 	};
 
 	destroy = async id => {

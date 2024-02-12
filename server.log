@@ -2382,3 +2382,112 @@ Unknown argument `quantity`. Available options are marked with ?. - /orders - PO
 [info] - 12-02-24 11:32:57 - 200 - Got Order List - /orders - GET - {}
 [info] - 12-02-24 11:33:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
 [info] - 12-02-24 11:33:09 - 200 - Got Product List - /products - GET - {}
+[info] - 12-02-24 11:50:08 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:54:52 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:55:04 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:55:19 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:55:33 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:56:12 - Server is running on http://localhost:8000
+[info] - 12-02-24 12:56:28 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:04:36 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:04:48 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:05:28 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:05:48 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:06:57 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:08:50 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:12:39 - 200 - Got Product List - /products - GET - {}
+[error] - 12-02-24 13:13:52 - 500 - 
+Invalid `transaction.review.create()` invocation in
+C:\Projects\tech_store_backend\src\models\review.model.js:34:49
+
+  31 if (comment) data['comment'] = comment;
+  32 return await this.prisma.$transaction(async transaction => {
+  33 	// Firstly, add the review
+→ 34 	const addedReview = await transaction.review.create({
+       data: {
+         user_id: undefined,
+         product_id: undefined,
+     +   rating: Int
+       }
+     })
+
+Argument `rating` is missing. - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:14:23 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:16:06 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:16:07 - 500 - 
+Invalid `transaction.review.create()` invocation in
+C:\Projects\tech_store_backend\src\models\review.model.js:34:49
+
+  31 if (comment) data['comment'] = comment;
+  32 return await this.prisma.$transaction(async transaction => {
+  33 	// Firstly, add the review
+→ 34 	const addedReview = await transaction.review.create({
+       data: {
+         user_id: undefined,
+         product_id: undefined,
+     +   rating: Int
+       }
+     })
+
+Argument `rating` is missing. - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:16:41 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:16:45 - 500 - 
+Invalid `transaction.review.create()` invocation in
+C:\Projects\tech_store_backend\src\models\review.model.js:35:49
+
+  32 console.log(JSON.stringify(data));
+  33 return await this.prisma.$transaction(async transaction => {
+  34 	// Firstly, add the review
+→ 35 	const addedReview = await transaction.review.create({
+       data: {
+         user_id: undefined,
+         product_id: undefined,
+     +   rating: Int
+       }
+     })
+
+Argument `rating` is missing. - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:17:26 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:17:29 - 500 - transaction.review.get is not a function - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:17:47 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:18:05 - 500 - 
+Invalid `transaction.review.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\review.model.js:37:45
+
+  34 // Firstly, add the review
+  35 const addedReview = await transaction.review.create({ data });
+  36 // Get all the reviews for the product, which includes the newly added review
+→ 37 const reviews = await transaction.review.findUnique({
+       where: {
+         product_id: "65c835500d2685daaddf1947",
+     ?   id?: String,
+     ?   AND?: ReviewWhereInput | ReviewWhereInput[],
+     ?   OR?: ReviewWhereInput[],
+     ?   NOT?: ReviewWhereInput | ReviewWhereInput[],
+     ?   rating?: IntFilter | Int,
+     ?   comment?: StringNullableFilter | String | Null,
+     ?   created_at?: DateTimeFilter | DateTime,
+     ?   user_id?: StringFilter | String,
+     ?   user?: UserRelationFilter | UserWhereInput,
+     ?   product?: ProductRelationFilter | ProductWhereInput
+       }
+     })
+
+Argument `where` of type ReviewWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:18:24 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:19:28 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:19:47 - 500 - reviews.forEach is not a function - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:20:50 - Server is running on http://localhost:8000
+[error] - 12-02-24 13:21:06 - 500 - Cannot read properties of undefined (reading 'info') - /reviews - POST - ::ffff:127.0.0.1
+[info] - 12-02-24 13:21:22 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:21:40 - 201 - Review Added - /reviews - POST - {"product_id":"65c835500d2685daaddf1947","rating":4,"comment":"Fucking amazing!!!","user_id":"65ac72567fdf1e47f031f338"}
+[info] - 12-02-24 13:21:51 - 200 - Got Product List - /products - GET - {}
+[info] - 12-02-24 13:23:11 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:23:16 - 200 - Got Product List - /products - GET - {}
+[info] - 12-02-24 13:24:07 - 200 - Got User List - /users - GET - {}
+[info] - 12-02-24 13:24:42 - 201 - Review Added - /reviews - POST - {"product_id":"65c835500d2685daaddf1947","rating":3,"comment":"Meh","user_id":"65b8bffbe3179d8b60a05cf5"}
+[info] - 12-02-24 13:24:54 - 200 - Got Product List - /products - GET - {}
+[error] - 12-02-24 13:30:50 - 500 - transaction.review.get is not a function - /reviews - PUT - ::ffff:127.0.0.1
+[info] - 12-02-24 13:31:17 - Server is running on http://localhost:8000
+[info] - 12-02-24 13:31:21 - 200 - Review Updated - /reviews - PUT - {"id":"65c9ce0c687768b123b7a63d","rating":5}
+[info] - 12-02-24 13:31:59 - 200 - Got Product List - /products - GET - {}

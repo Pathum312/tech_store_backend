@@ -1,16 +1,16 @@
 class ReviewService {
 	constructor({ reviewRepository, logger }) {
 		this.reviewRepository = reviewRepository;
-		this.logger - logger;
+		this.logger = logger;
 	}
 
 	create = async (req, res, next) => {
 		try {
-			const { product_id, rating, comment, user_id } = req.query;
+			const { product_id, rating, comment, user_id } = req.body;
 			// Add a review to DB
 			await this.reviewRepository.create({ product_id, rating, comment, user_id });
 			this.logger.info(`201 - Review Added - /reviews - POST - ${JSON.stringify(req.body)}`);
-			return res.status(201).json('Review Added');
+			return res.status(201).json({ message: 'Review Added' });
 		} catch (error) {
 			next(error);
 		}
@@ -26,7 +26,7 @@ class ReviewService {
 			// Finally update the review with the updated details
 			await this.reviewRepository.update({ id, rating, comment });
 			this.logger.info(`200 - Review Updated - /reviews - PUT - ${JSON.stringify(req.body)}`);
-			return res.status(200).json('Review Updated');
+			return res.status(200).json({ message: 'Review Updated' });
 		} catch (error) {
 			next(error);
 		}
