@@ -5,12 +5,6 @@ const { UserRepository } = require('../repositories');
 const { AuthService } = require('../services');
 const { Bcrypt, JWT, Prisma } = require('../config');
 const { logger } = require('../middleware/log.middleware');
-/**
- * @swagger
- * tags:
- *   - name: Auth
- *     description: API endpoints for managing authentication
- */
 const authService = new AuthService({
 	userRepository: new UserRepository({
 		userModel: new UserModel({ prisma: Prisma }),

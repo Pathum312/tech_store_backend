@@ -65,7 +65,7 @@ class UserService {
 			// If there's no such user, send error
 			if (!user)
 				return next({
-					status: 400,
+					status: 500,
 					message: `User doesn't exist.`,
 				});
 			// If user exists, delete user
