@@ -18,7 +18,7 @@ class UserRepository {
 		});
 	}
 
-	async update({ id, name, username, address, email, password }) {
+	async update({ id, name, username, address, email, password, login }) {
 		return await this.userModel.update({
 			id,
 			name,
@@ -26,6 +26,7 @@ class UserRepository {
 			address,
 			email,
 			password,
+			login,
 		});
 	}
 

@@ -16,12 +16,12 @@ const options = {
 		},
 		servers: [
 			{
-				url: 'http://localhost:8000/',
+				url: 'http://localhost:8000',
 				description: 'Local Server',
 			},
 		],
 	},
-	apis: ['../controllers/*.js'],
+	apis: ['./src/controllers/*.js'],
 };
 
 const specs = swaggerJsDoc(options);

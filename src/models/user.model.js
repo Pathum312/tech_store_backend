@@ -52,7 +52,7 @@ class UserModel {
 		});
 	}
 
-	async update({ id, name, username, address, email, password }) {
+	async update({ id, name, username, address, email, password, login }) {
 		// Update data
 		let data = {};
 		// Check if name is not null
@@ -65,10 +65,9 @@ class UserModel {
 		if (email) data['email'] = email;
 		// Check if password is not null
 		if (password) data['password'] = password;
-		return await this.prisma.user.update({
-			where: { id },
-			data,
-		});
+		// Check if login is not null
+		if (login === true || login === false) data['login'] = login;
+		return await this.prisma.user.update({ where: { id }, data });
 	}
 
 	async destroy(id) {
