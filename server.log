@@ -2584,3 +2584,18 @@ Argument `where` of type ReviewWhereUniqueInput needs at least one of `id` argum
 [info] - 12-02-24 23:31:06 - Server is running on http://localhost:8000
 [info] - 12-02-24 23:31:25 - Server is running on http://localhost:8000
 [info] - 12-02-24 23:33:03 - Server is running on http://localhost:8000
+[info] - 13-02-24 07:53:16 - Server is running on http://localhost:8000
+[info] - 13-02-24 07:56:11 - Server is running on http://localhost:8000
+[info] - 13-02-24 07:56:46 - Server is running on http://localhost:8000
+[info] - 13-02-24 07:58:52 - Server is running on http://localhost:8000
+[info] - 13-02-24 07:59:11 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:00:35 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:00:48 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:01:29 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:04:50 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:04:58 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:05:20 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:05:51 - Server is running on http://localhost:8000
+[info] - 13-02-24 08:07:58 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[error] - 13-02-24 08:08:06 - 400 - Invalid email or password. - /auth/login - POST - ::ffff:127.0.0.1
+[info] - 13-02-24 08:08:12 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}

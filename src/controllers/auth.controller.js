@@ -58,8 +58,8 @@ const authService = new AuthService({
  *               - email
  *               - password
  *     responses:
- *       '200':
- *         description: Success response.
+ *       '201':
+ *         description: Created.
  *       '400':
  *         description: Bad request.
  *       '500':
@@ -69,14 +69,104 @@ router.post('/register', async (req, res, next) => {
 	await authService.register(req, res, next);
 });
 
+/**
+ * @swagger
+ * /auth/login:
+ *   post:
+ *     summary: Login API, will return a JWT token in response
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 default: johndoe@example.com
+ *               password:
+ *                 type: string
+ *                 default: password
+ *             required:
+ *               - email
+ *               - password
+ *     responses:
+ *       '200':
+ *         description: Success response.
+ *       '400':
+ *         description: Bad request.
+ *       '500':
+ *         description: Internal server error.
+ */
 router.post('/login', async (req, res, next) => {
 	await authService.login(req, res, next);
 });
 
+/**
+ * @swagger
+ * /auth/logout:
+ *   post:
+ *     summary: Logout API, will delete token
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               id:
+ *                 type: string
+ *                 default: 65b675sd87cd67
+ *             required:
+ *               - id
+ *     responses:
+ *       '200':
+ *         description: Success response.
+ *       '400':
+ *         description: Bad request.
+ *       '500':
+ *         description: Internal server error.
+ */
 router.post('/logout', async (req, res, next) => {
 	await authService.logout(req, res, next);
 });
 
+/**
+ * @swagger
+ * /auth/reset-password:
+ *   patch:
+ *     summary: Reset users password
+ *     tags: [Auth]
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               id:
+ *                 type: string
+ *                 default: 65b675sd87cd67
+ *               password:
+ *                 type: string
+ *                 default: password
+ *               newPassword:
+ *                 type: object
+ *                 default: password123
+ *             required:
+ *               - id
+ *               - password
+ *               - newPassword
+ *     responses:
+ *       '200':
+ *         description: Success Response.
+ *       '400':
+ *         description: Bad request.
+ *       '500':
+ *         description: Internal server error.
+ */
 router.patch('/reset-password', async (req, res, next) => {
 	await authService.resetPassword(req, res, next);
 });

@@ -3,7 +3,7 @@ const { JWT_SECRET } = require('./env');
 
 // Create an access token
 generateToken = payload => {
-	return jwt.sign(payload, JWT_SECRET, { expiresIn: '1h' });
+	return jwt.sign(payload, JWT_SECRET, { expiresIn: '24h' });
 };
 
 // Verify generated token
