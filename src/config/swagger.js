@@ -19,6 +19,10 @@ const options = {
 				url: 'http://localhost:8000',
 				description: 'Local Server',
 			},
+			{
+				url: 'https://tech-store-sd74.onrender.com',
+				description: 'Live Server',
+			},
 		],
 	},
 	apis: ['./src/controllers/*.js'],
