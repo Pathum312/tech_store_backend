@@ -4490,3 +4490,24 @@ Argument `description`: Invalid value provided. Expected String, provided Object
 [info] - 13-04-24 19:07:33 - 200 - Got Category List - /categories - GET - {}
 [info] - 13-04-24 19:07:33 - 200 - Got Product List - /products - GET - {"name":"audio"}
 [info] - 13-04-24 19:16:45 - 200 - Got User Pinkz Info - /users/65ac72567fdf1e47f031f338 - GET
+[info] - 13-04-24 19:18:27 - Server is running on http://localhost:8000
+[info] - 13-04-24 19:18:29 - 200 - Got User Pinkz Info - /users/65ac72567fdf1e47f031f338 - GET
+[info] - 13-04-24 19:22:53 - 200 - Got Product List - /products - GET - {"name":""}
+[info] - 13-04-24 19:22:58 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 13-04-24 22:14:42 - 201 - Review Added - /reviews - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614d10946927b3f8703a1e4","rating":3,"comment":"This is awesome."}
+[info] - 13-04-24 22:14:53 - 200 - Got Product List - /products - GET - {"name":"consoles"}
+[info] - 13-04-24 22:14:54 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 13-04-24 22:15:37 - 200 - Got Product List - /products - GET - {"name":""}
+[info] - 13-04-24 22:15:46 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 13-04-24 22:33:10 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:33:14 - 200 - Got User Pinkz Info - /users/65ac72567fdf1e47f031f338 - GET
+[info] - 13-04-24 22:33:29 - 200 - User Pinkz Logged Out - /auth/logout - POST - {"id":"65ac72567fdf1e47f031f338"}
+[info] - 13-04-24 22:33:31 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 13-04-24 22:33:38 - 200 - Got Category List - /categories - GET - {}
+[info] - 13-04-24 22:33:38 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 13-04-24 22:36:06 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:41:10 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:41:18 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:41:58 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:42:06 - Server is running on http://localhost:8000
+[info] - 13-04-24 22:43:03 - Server is running on http://localhost:8000
