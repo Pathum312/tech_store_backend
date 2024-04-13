@@ -15,7 +15,7 @@ class ReviewModel {
 		});
 		// Divide the total rating with the number of reviews, to get the average
 		// Finally return the average rating for teh product
-		return totalRating / reviews.length;
+		return Math.round(totalRating / reviews.length);
 	};
 
 	create = async ({ product_id, rating, comment, user_id }) => {
