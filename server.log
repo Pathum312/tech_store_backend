@@ -5244,3 +5244,361 @@ Unknown argument `product`. Available options are marked with ?. - /carts/65ac72
 [info] - 23-04-24 16:00:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
 [info] - 23-04-24 16:01:34 - Server is running on http://localhost:8000
 [info] - 23-04-24 16:01:37 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 16:02:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:05:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:05:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:05:20 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:06:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:06:16 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 16:06:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 16:06:17 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 17:58:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 23-04-24 18:01:12 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "pending"
+                 ~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=pending - GET - ::ffff:127.0.0.1
+[error] - 23-04-24 18:01:18 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "pending"
+                 ~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=pending - GET - ::ffff:127.0.0.1
+[error] - 23-04-24 18:02:00 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "completed"
+                 ~~~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=completed - GET - ::ffff:127.0.0.1
+[error] - 23-04-24 18:02:06 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "pending"
+                 ~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=pending - GET - ::ffff:127.0.0.1
+[info] - 23-04-24 18:02:59 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"PENDING"}
+[info] - 23-04-24 18:09:27 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[error] - 23-04-24 18:09:43 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "COMPLETED"
+                 ~~~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=COMPLETED - GET - ::ffff:127.0.0.1
+[error] - 23-04-24 18:09:48 - 500 - 
+Invalid `this.prisma.order.findMany()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:14:34
+
+  11 if (user_id) where['user_id'] = user_id;
+  12 // Find a order by a specific status
+  13 if (status) where['status'] = status;
+→ 14 return await this.prisma.order.findMany({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338",
+         status: "COMPLETED"
+                 ~~~~~~~~~~~
+       },
+       include: {
+         items: {
+           include: {
+             product: true
+           }
+         }
+       }
+     })
+
+Invalid value for argument `status`. Expected Order_Status. - /orders?user_id=65ac72567fdf1e47f031f338&status=COMPLETED - GET - ::ffff:127.0.0.1
+[info] - 23-04-24 18:10:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 23-04-24 18:10:25 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 18:10:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 18:10:42 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 18:10:51 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 18:11:32 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 18:11:33 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 18:11:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 18:11:57 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 18:11:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 18:11:58 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 18:12:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 18:12:04 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:25:38 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:29:04 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:29:20 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:29:42 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:29:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:29:57 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:30:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 20:30:15 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:31:34 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:32:07 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:33:20 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:39:43 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:39:56 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:40:54 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:42:59 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:43:16 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:43:42 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:43:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:44:04 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:45:56 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:47:56 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:49:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 20:50:01 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:51:19 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:54:53 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:55:56 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 20:56:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:09:09 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:14:49 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:16:34 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:22:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 21:22:48 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:30:04 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:31:08 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:35:32 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:35:54 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:43:44 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:44:23 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:45:05 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:45:16 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:45:17 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:47:37 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:48:03 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:49:30 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:51:39 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:52:12 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:52:37 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:52:50 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:53:11 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:55:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:55:57 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:56:58 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:57:06 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:57:40 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:58:28 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:58:42 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 21:59:12 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 23-04-24 22:05:49 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 22:05:52 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:23:11 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:23:13 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:27:42 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:27:44 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:27:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:28:58 - 200 - Got Category List - /categories - GET - {}
+[info] - 24-04-24 00:29:00 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:29:00 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 24-04-24 00:29:06 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:30:27 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:30:28 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:30:29 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:30:31 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:33:01 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:33:04 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:35:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:35:16 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:35:22 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:35:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:35:50 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:35:54 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:37:33 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:47:05 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:47:08 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:48:59 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:49:00 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 00:49:04 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:49:06 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:50:36 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:57:16 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:57:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:57:20 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:57:26 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 00:57:27 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:57:42 - 200 - Got Category List - /categories - GET - {}
+[info] - 24-04-24 00:57:42 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 00:57:42 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 24-04-24 00:57:54 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:59:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 00:59:46 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[error] - 24-04-24 00:59:52 - 500 - 
+Invalid `this.prisma.order.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\order.model.js:27:34
+
+  24 };
+  25 
+  26 getById = async id => {
+→ 27 	return await this.prisma.order.findUnique({
+       where: {
+         id: undefined,
+     ?   AND?: OrderWhereInput | OrderWhereInput[],
+     ?   OR?: OrderWhereInput[],
+     ?   NOT?: OrderWhereInput | OrderWhereInput[],
+     ?   created_at?: DateTimeFilter | DateTime,
+     ?   total_amount?: FloatFilter | Float,
+     ?   status?: EnumOrder_StatusFilter | Order_Status,
+     ?   user_id?: StringFilter | String,
+     ?   items?: Order_ItemListRelationFilter,
+     ?   payment?: PaymentListRelationFilter,
+     ?   user?: UserRelationFilter | UserWhereInput
+       },
+       include: {
+         items: true
+       }
+     })
+
+Argument `where` of type OrderWhereUniqueInput needs at least one of `id` arguments. Available options are marked with ?. - /orders - PUT - ::ffff:127.0.0.1
+[info] - 24-04-24 01:00:18 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[error] - 24-04-24 01:00:22 - 500 - Order does not exist - /orders - PUT - ::ffff:127.0.0.1
+[info] - 24-04-24 01:02:23 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:02:25 - 200 - Order Updated - /orders - PUT - {"id":"662784438ad938c11b3d960d","status":"CANCELLED"}
+[info] - 24-04-24 01:02:28 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:02:29 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:02:48 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:02:52 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:03:32 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:03:57 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:04:01 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:04:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:04:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:04:17 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:04:25 - 200 - Got Category List - /categories - GET - {}
+[info] - 24-04-24 01:04:25 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:04:26 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 24-04-24 01:04:36 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:05:22 - 200 - Order Updated - /orders - PUT - {"id":"662789e28ad938c11b3d961a","status":"DELIVERED"}
+[info] - 24-04-24 01:05:26 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:05:30 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:06:17 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:06:18 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:09:25 - Server is running on http://localhost:8000
+[info] - 24-04-24 01:09:32 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:09:33 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:09:41 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:09:43 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:10:41 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:10:45 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:10:55 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:11:00 - 200 - Got Category List - /categories - GET - {}
+[info] - 24-04-24 01:11:00 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 24-04-24 01:11:01 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:11:07 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 24-04-24 01:11:08 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:11:10 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614ceea46927b3f8703a1e3","quantity":1,"price":37.99}
+[info] - 24-04-24 01:11:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:11:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:11:24 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:11:32 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:11:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:12:45 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:12:51 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:12:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:12:54 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:13:00 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:13:01 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:13:08 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:13:09 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:13:10 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:13:13 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:13:22 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:13:29 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:13:33 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:14:05 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:14:12 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:14:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:14:25 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:14:26 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:17:35 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:20:42 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:20:45 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:34:34 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:34:35 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":"DELIVERED"}
+[info] - 24-04-24 01:34:51 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338","status":""}
+[info] - 24-04-24 01:41:27 - 200 - Got Category List - /categories - GET - {}
+[info] - 24-04-24 01:41:28 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 24-04-24 01:41:28 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 24-04-24 01:41:32 - 200 - User Pinkz Logged Out - /auth/logout - POST - {"id":"65ac72567fdf1e47f031f338"}

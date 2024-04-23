@@ -11,6 +11,7 @@ class OrderModel {
 		if (user_id) where['user_id'] = user_id;
 		// Find a order by a specific status
 		if (status) where['status'] = status;
+		if (status === '') where['NOT'] = { status: 'DELIVERED' }
 		return await this.prisma.order.findMany({
 			where,
 			include: {
