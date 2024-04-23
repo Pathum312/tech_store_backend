@@ -15,6 +15,17 @@ class ProductService {
 		}
 	}
 
+	getById = async (req, res, next) => {
+		try {
+			const id = req.params.id;
+			const product = await this.productRepository.getById(id);
+			this.logger.info(`200 - Got Cart details - /products/${id} - GET`);
+			return res.status(200).json(product);
+		} catch (error) {
+			next(error);
+		}
+	};
+
 	async create(req, res, next) {
 		try {
 			const { name, description, price, stock, images, category_id, user_id } = req.body;

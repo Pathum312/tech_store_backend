@@ -11,7 +11,16 @@ class OrderModel {
 		if (user_id) where['user_id'] = user_id;
 		// Find a order by a specific status
 		if (status) where['status'] = status;
-		return await this.prisma.order.findMany({ where, include: { items: true } });
+		return await this.prisma.order.findMany({
+			where,
+			include: {
+				items: {
+					include: {
+						product: true
+					}
+				}
+			}
+		});
 	};
 
 	getById = async id => {

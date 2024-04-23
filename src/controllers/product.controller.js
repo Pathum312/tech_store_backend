@@ -98,6 +98,31 @@ router.get('/', async (req, res, next) => {
 
 /**
  * @swagger
+ * /products/{id}:
+ *   get:
+ *     summary: Get product details
+ *     tags: [Product]
+ *     security:
+ *       - JWTAuth: []
+ *     parameters: [
+ *      {
+ *          name: 'id',
+ *          in: 'path',
+ *          description: '65dsfgfdsg'
+ *      },
+ *     ]
+ *     responses:
+ *       '200':
+ *         description: Success response.
+ *       '500':
+ *         description: Internal server error.
+ */
+router.get('/:id', async (req, res, next) => {
+	await productService.getById(req, res, next);
+});
+
+/**
+ * @swagger
  * /products:
  *   put:
  *     summary: Update the product

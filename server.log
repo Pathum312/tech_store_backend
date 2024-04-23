@@ -4511,3 +4511,734 @@ Argument `description`: Invalid value provided. Expected String, provided Object
 [info] - 13-04-24 22:41:58 - Server is running on http://localhost:8000
 [info] - 13-04-24 22:42:06 - Server is running on http://localhost:8000
 [info] - 13-04-24 22:43:03 - Server is running on http://localhost:8000
+[info] - 21-04-24 07:23:10 - Server is running on http://localhost:8000
+[info] - 21-04-24 07:24:13 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 21-04-24 07:24:17 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 07:24:17 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:32:16 - 200 - Got Product List - /products - GET - {"name":"ps4"}
+[info] - 21-04-24 07:32:20 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:38:18 - 200 - Got Product List - /products - GET - {"name":"ps5"}
+[info] - 21-04-24 07:38:19 - 200 - Got Product List - /products - GET - {"name":"ps4"}
+[info] - 21-04-24 07:38:20 - 200 - Got Product List - /products - GET - {"name":"xbox"}
+[info] - 21-04-24 07:38:22 - 200 - Got Product List - /products - GET - {"name":"nintendo"}
+[info] - 21-04-24 07:38:23 - 200 - Got Product List - /products - GET - {"name":"consoles"}
+[info] - 21-04-24 07:38:24 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:38:44 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:38:55 - 200 - Got Product List - /products - GET - {"name":"ps4"}
+[info] - 21-04-24 07:39:05 - 200 - Got Product List - /products - GET - {"name":"ok"}
+[info] - 21-04-24 07:39:14 - 200 - Got Product List - /products - GET - {"name":""}
+[info] - 21-04-24 07:39:28 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:39:33 - 200 - Got Product List - /products - GET - {"name":"consoles"}
+[info] - 21-04-24 07:39:34 - 200 - Got Product List - /products - GET - {"name":"nintendo"}
+[info] - 21-04-24 07:39:35 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 07:40:26 - 201 - Review Added - /reviews - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614d10946927b3f8703a1e4","rating":5,"comment":"Very cool."}
+[info] - 21-04-24 07:40:35 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:12:53 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:13:40 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:13:41 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:14:15 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:14:16 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:16:09 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:16:09 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:17:33 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:17:34 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:18:04 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:18:04 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:18:50 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:18:50 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:19:42 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:19:43 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:20:09 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:20:10 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:21:39 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:21:39 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:21:55 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:21:56 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:22:06 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:22:06 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:24:42 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:24:42 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:24:54 - 200 - User Pinkz Logged Out - /auth/logout - POST - {"id":"65ac72567fdf1e47f031f338"}
+[info] - 21-04-24 18:24:56 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 21-04-24 18:25:06 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:25:07 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:25:30 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 21-04-24 18:25:54 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:25:55 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:31:58 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:31:59 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:32:36 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:32:37 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 21-04-24 18:34:15 - 200 - Got Category List - /categories - GET - {}
+[info] - 21-04-24 18:34:15 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:09:04 - Server is running on http://localhost:8000
+[info] - 22-04-24 10:17:53 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 22-04-24 10:18:03 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:18:04 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:26:57 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:26:57 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:37:29 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:37:29 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:38:20 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:38:20 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:38:47 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:38:47 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:40:08 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:40:08 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:40:51 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:40:51 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:41:23 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:41:23 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:41:37 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:41:37 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:42:55 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:42:55 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[error] - 22-04-24 10:43:11 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:18:33
+
+  15 };
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+→ 18 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         products: {
+           create: {
+             price: NaN,
+             product_id: undefined,
+     +       quantity: Int
+           }
+         }
+       }
+     })
+
+Argument `quantity` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[error] - 22-04-24 10:46:11 - 500 - 
+Invalid `this.prisma.cart.create()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:18:33
+
+  15 };
+  16 
+  17 create = async ({ user_id, product_id, quantity, price }) => {
+→ 18 	return await this.prisma.cart.create({
+       data: {
+         user_id: "65ac72567fdf1e47f031f338",
+         products: {
+           create: {
+             price: NaN,
+             product_id: undefined,
+     +       quantity: Int
+           }
+         }
+       }
+     })
+
+Argument `quantity` is missing. - /carts/add-to-cart - POST - ::ffff:127.0.0.1
+[info] - 22-04-24 10:46:49 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:46:50 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:47:01 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:47:24 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:49:48 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:50:49 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:51:35 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:51:36 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:51:45 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:51:45 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:52:17 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:53:40 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:53:43 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:53:58 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:53:59 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:54:47 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 10:54:48 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 10:54:54 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 10:57:29 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 22-04-24 11:05:23 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:05:42 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:55:35 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:56:14 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:57:04 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 11:57:04 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 11:57:08 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:57:53 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:58:19 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:58:31 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:59:01 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 11:59:06 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 12:00:40 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":0,"price":79.99}
+[info] - 22-04-24 12:01:11 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 12:01:49 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 22-04-24 12:01:56 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 12:09:21 - Server is running on http://localhost:8000
+[info] - 22-04-24 12:09:25 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 12:09:41 - Server is running on http://localhost:8000
+[info] - 22-04-24 12:09:56 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 12:11:12 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614ceea46927b3f8703a1e3","quantity":2,"price":37.99}
+[info] - 22-04-24 12:12:56 - Server is running on http://localhost:8000
+[info] - 22-04-24 12:13:04 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 12:13:14 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 22-04-24 12:13:32 - Server is running on http://localhost:8000
+[info] - 22-04-24 12:22:43 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 12:22:44 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:19:37 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661523181dbdf1bffd2830e9","quantity":2,"price":134.99}
+[info] - 22-04-24 14:19:58 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:19:59 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:20:38 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":2,"price":79.99}
+[info] - 22-04-24 14:23:51 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:24:47 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:24:48 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:25:34 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:25:35 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:26:12 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:26:12 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:26:31 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:26:31 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:27:41 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:27:42 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:27:46 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:27:46 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:28:40 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:28:40 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:30:34 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:30:35 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:30:35 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:32:17 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:32:17 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:32:54 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:32:54 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:33:03 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:33:04 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:33:40 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:33:40 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:35:20 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:35:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:35:21 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 14:35:34 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661520831dbdf1bffd2830e8","quantity":2,"price":49.95}
+[info] - 22-04-24 14:35:35 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:35:40 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661520831dbdf1bffd2830e8","quantity":1,"price":49.95}
+[info] - 22-04-24 14:35:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:42:27 - 200 - User Pinkz Logged Out - /auth/logout - POST - {"id":"65ac72567fdf1e47f031f338"}
+[info] - 22-04-24 14:42:46 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 22-04-24 14:42:56 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 14:42:56 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 14:42:56 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 15:12:37 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 22-04-24 15:13:10 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 22-04-24 15:16:25 - 200 - Got Product List - /products - GET - {"name":""}
+[info] - 22-04-24 15:16:29 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 15:28:04 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 15:28:04 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 15:28:05 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 15:32:10 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 15:32:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 15:32:10 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 20:04:10 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 20:04:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 20:04:10 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 20:04:27 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 20:04:27 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 20:04:28 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 20:05:12 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 20:05:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 20:05:13 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 20:05:51 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 20:05:51 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 20:05:51 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 20:11:11 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 20:11:11 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 20:11:11 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 22:23:38 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:39:58 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 22:39:58 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 22:39:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:40:05 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 22:40:05 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:40:05 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 22:48:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:49:29 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:50:27 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:52:48 - 200 - Got Category List - /categories - GET - {}
+[info] - 22-04-24 22:52:49 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:52:49 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 22-04-24 22:53:00 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:55:46 - Server is running on http://localhost:8000
+[info] - 22-04-24 22:56:55 - Server is running on http://localhost:8000
+[info] - 22-04-24 22:58:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 22:58:34 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:00:05 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:11:35 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:11:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:11:35 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:11:36 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:11:36 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:12:03 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:12:03 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:12:03 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:12:03 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:12:03 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:12:38 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:12:38 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:12:38 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:12:38 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:12:38 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:12:54 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:13:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:13:06 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:13:06 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:13:06 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:13:06 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:15:08 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:15:08 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:15:08 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:15:08 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:15:08 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:15:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:15:17 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:15:17 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:15:17 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:15:17 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:15:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:15:36 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:15:36 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:15:36 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:15:36 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:16:28 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:16:28 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:16:28 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:16:28 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:16:28 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:27:20 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:27:20 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:27:20 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:20 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:20 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:27:21 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:27:41 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:27:42 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:27:42 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:27:42 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:42 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:42 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:27:56 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:28:54 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:28:55 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:28:55 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:28:55 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:28:55 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:28:55 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:29:42 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:30:31 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:30:31 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:31 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:31 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:32 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:32 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:30:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:35 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:42 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:30:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:30:56 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:31:17 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:31:57 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:32:25 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:33:00 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:33:01 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:33:01 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:33:01 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:01 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:01 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:19 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:33:34 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:04 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:34:23 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:34:24 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:34:24 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:34:24 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:24 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:24 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:34:43 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:14 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:35:18 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:35:19 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:35:19 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:35:19 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:19 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:19 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:35:34 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:36:07 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:36:07 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:36:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:36:15 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:36:57 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:36:58 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:39:07 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /products/661523181dbdf1bffd2830e9 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /products/661520831dbdf1bffd2830e8 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /products/6614cce546927b3f8703a1e2 - GET
+[info] - 22-04-24 23:39:47 - 200 - Got Cart details - /products/6614ceea46927b3f8703a1e3 - GET
+[info] - 22-04-24 23:42:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:42:39 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:43:12 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 22-04-24 23:43:30 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:19:22 - Server is running on http://localhost:8000
+[info] - 23-04-24 09:21:13 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 23-04-24 09:21:19 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:21:19 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:21:20 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:21:27 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:21:29 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:21:29 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:21:29 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:22:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:09 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:22:09 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:10 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:22:33 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:33 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:22:33 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:34 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:22:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:40 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:22:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:40 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:22:43 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:22:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:22:44 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:23:32 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:23:33 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:23:33 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:23:34 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:23:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:23:40 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:23:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:23:40 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:23:49 - 200 - User Pinkz Logged Out - /auth/logout - POST - {"id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 09:23:54 - 200 - User Pinkz Logged In - /auth/login - POST - {"email":"pathumsenanayake@proton.me","password":"test123"}
+[info] - 23-04-24 09:24:05 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:24:05 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:05 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:24:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:15 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:24:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:15 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:24:20 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:22 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:24:22 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:22 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:24:24 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:25 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:24:25 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:25 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:24:31 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:35 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:24:35 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:24:35 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:25:06 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:25:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:25:06 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:25:16 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:25:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:25:16 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:26:36 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:26:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:26:36 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:27:07 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:27:07 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:27:07 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:27:16 - 200 - Got Product List - /products - GET - {"name":"consoles"}
+[info] - 23-04-24 09:27:18 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:27:47 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:27:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:27:47 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:27:57 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:27:57 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:27:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:28:11 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:28:12 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:28:12 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:29:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:29:22 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 09:29:23 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 09:29:23 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:29:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:30:44 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:33:50 - Server is running on http://localhost:8000
+[error] - 23-04-24 09:33:57 - 500 - 
+Invalid `this.prisma.cart.findUnique()` invocation in
+C:\Projects\tech_store_backend\src\models\cart.model.js:11:33
+
+   8 };
+   9 
+  10 getById = async user_id => {
+→ 11 	return await this.prisma.cart.findUnique({
+       where: {
+         user_id: "65ac72567fdf1e47f031f338"
+       },
+       include: {
+         products: {
+           product: true,
+           ~~~~~~~
+     ?     where?: Cart_ItemWhereInput,
+     ?     orderBy?: Cart_ItemOrderByWithRelationInput[] | Cart_ItemOrderByWithRelationInput,
+     ?     cursor?: Cart_ItemWhereUniqueInput,
+     ?     take?: Int,
+     ?     skip?: Int,
+     ?     distinct?: Cart_ItemScalarFieldEnum | Cart_ItemScalarFieldEnum[]
+         }
+       }
+     })
+
+Unknown argument `product`. Available options are marked with ?. - /carts/65ac72567fdf1e47f031f338 - GET - ::ffff:127.0.0.1
+[info] - 23-04-24 09:34:46 - Server is running on http://localhost:8000
+[info] - 23-04-24 09:34:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:35:18 - Server is running on http://localhost:8000
+[info] - 23-04-24 09:35:31 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:36:37 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:38:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:38:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 09:39:07 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:38:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:39:43 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 12:39:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:39:44 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 12:39:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:44:07 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:44:14 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:47:24 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:48:08 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:48:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:50:12 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:50:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:50:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:52:57 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:56:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 12:58:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:02:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:04:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:07:59 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:09:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:09:50 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 13:09:52 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 13:09:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:09:54 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:10:41 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:14:45 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:15:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:15:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:15:48 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:16:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:16:36 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:16:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:16:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:17:57 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:18:01 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:18:05 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:20:20 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 13:20:20 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 13:20:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:20:24 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:26:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:26:17 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:27:34 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:36:45 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:37:59 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 13:38:00 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:00 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 13:38:03 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:06 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 13:38:06 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 13:38:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:07 - 200 - Got Product List - /products - GET - {"name":"consoles"}
+[info] - 23-04-24 13:38:11 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"66155e3c8aa0fc0431539468","quantity":1,"price":558.7}
+[info] - 23-04-24 13:38:11 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:14 - 200 - Got Product List - /products - GET - {"name":"nintendo"}
+[info] - 23-04-24 13:38:16 - 200 - Got Product List - /products - GET - {"name":"ps4"}
+[info] - 23-04-24 13:38:19 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6615250b1dbdf1bffd2830ea","quantity":2,"price":34.29}
+[info] - 23-04-24 13:38:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:22 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661559f38aa0fc0431539464","quantity":1,"price":24.9}
+[info] - 23-04-24 13:38:22 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:26 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"66155afe8aa0fc0431539465","quantity":1,"price":22.59}
+[info] - 23-04-24 13:38:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 13:38:32 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:52:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:52:35 - 200 - Item Removed - /carts/delete-item - PATCH - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2"}
+[info] - 23-04-24 14:52:41 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:52:44 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 14:52:45 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 14:52:46 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:52:50 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:56:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:57:38 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 14:58:28 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:04:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:07:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:19:52 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:19:58 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 15:20:03 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:20:07 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:20:08 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:20:08 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:20:21 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 23-04-24 15:20:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:20:25 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:21:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:22:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:22:12 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:22:19 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:36:43 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:36:48 - 200 - Item Removed - /carts/delete-item - PATCH - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2"}
+[info] - 23-04-24 15:36:51 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:37:01 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:38:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:39:25 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:40:41 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:40:44 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 15:42:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:42:40 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 23-04-24 15:42:49 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[info] - 23-04-24 15:42:59 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:43:00 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:43:01 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:43:04 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6614cce546927b3f8703a1e2","quantity":1,"price":79.99}
+[info] - 23-04-24 15:43:05 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:43:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:43:49 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:43:55 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 15:43:58 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 23-04-24 15:44:00 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:15 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[info] - 23-04-24 15:44:37 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:44:48 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 23-04-24 15:44:49 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:51 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:53 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:54 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:54 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:44:56 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[info] - 23-04-24 15:45:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:46:21 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:47:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:48:10 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:48:15 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:48:30 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:48:30 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:48:31 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:48:33 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:48:48 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:50:02 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:50:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:50:27 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[error] - 23-04-24 15:50:50 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:50:52 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[error] - 23-04-24 15:50:52 - 500 - No items are added to cart - /orders - POST - ::ffff:127.0.0.1
+[info] - 23-04-24 15:52:38 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:52:54 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:52:56 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:52:56 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:52:57 - 200 - Got Product List - /products - GET - {"name":"ps4"}
+[info] - 23-04-24 15:53:03 - 200 - Item added to cart - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"6615250b1dbdf1bffd2830ea","quantity":1,"price":34.29}
+[info] - 23-04-24 15:53:03 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:53:06 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661559f38aa0fc0431539464","quantity":1,"price":24.9}
+[info] - 23-04-24 15:53:06 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:53:13 - 200 - Cart Updated - /carts/add-to-cart - POST - {"user_id":"65ac72567fdf1e47f031f338","product_id":"661559f38aa0fc0431539464","quantity":2,"price":24.9}
+[info] - 23-04-24 15:53:13 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:53:18 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:53:28 - 201 - Order Added - /orders - POST - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 15:53:31 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:54:37 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:54:37 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:54:37 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:55:16 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:55:16 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:55:16 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:56:26 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:56:26 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:56:26 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:56:38 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:56:39 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:56:39 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:56:47 - 200 - Got Category List - /categories - GET - {}
+[info] - 23-04-24 15:56:47 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:56:48 - 200 - Got Product List - /products - GET - {"name":"audio"}
+[info] - 23-04-24 15:56:53 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:57:14 - 200 - Got Cart details - /carts/65ac72567fdf1e47f031f338 - GET
+[info] - 23-04-24 15:58:49 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 16:00:08 - Server is running on http://localhost:8000
+[info] - 23-04-24 16:00:11 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 16:00:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}

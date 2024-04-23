@@ -10,7 +10,13 @@ class CartModel {
 	getById = async user_id => {
 		return await this.prisma.cart.findUnique({
 			where: { user_id },
-			include: { products: true },
+			include: {
+				products: {
+					include: {
+						product: true
+					}
+				}
+			},
 		});
 	};
 
