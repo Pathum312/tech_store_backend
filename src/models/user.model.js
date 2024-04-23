@@ -12,7 +12,7 @@ class UserModel {
 		if (name) where['name'] = name;
 		// Find user by email
 		if (email) where['email'] = email;
-		return await this.prisma.user.findMany({ where });
+		return await this.prisma.user.findMany({ where, include: { cart: true } });
 	}
 
 	async getById(id) {
@@ -20,6 +20,9 @@ class UserModel {
 			where: {
 				id,
 			},
+			include: {
+				cart: true
+			}
 		});
 	}
 

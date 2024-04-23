@@ -8,7 +8,7 @@ class ProductModel {
 		let where = {};
 		// Find product by name
 		// Only if name is sent in params
-		if (name) where['name'] = name;
+		if (name) where['name'] = { contains: name.toLowerCase(), mode: 'insensitive' };
 		// Find all products listed by that seller
 		if (user_id) where['user_id'] = user_id;
 		// Find all products for that particular category
