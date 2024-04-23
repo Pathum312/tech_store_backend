@@ -5242,3 +5242,5 @@ Unknown argument `product`. Available options are marked with ?. - /carts/65ac72
 [info] - 23-04-24 16:00:08 - Server is running on http://localhost:8000
 [info] - 23-04-24 16:00:11 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
 [info] - 23-04-24 16:00:14 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
+[info] - 23-04-24 16:01:34 - Server is running on http://localhost:8000
+[info] - 23-04-24 16:01:37 - 200 - Got Order List - /orders - GET - {"user_id":"65ac72567fdf1e47f031f338"}
